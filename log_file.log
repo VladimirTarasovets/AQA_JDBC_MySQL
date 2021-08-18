@@ -301,3 +301,2504 @@
 2021-08-18 12:59:53 INFO  Log:25 - Connection to DB successful!
 2021-08-18 12:59:53 INFO  Log:25 - Send request to DB: DROP TABLE course
 2021-08-18 12:59:53 INFO  Log:25 - Table was deleted successfully
+2021-08-18 13:17:48 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:17:48 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:17:48 INFO  Log:25 - Send request to DB: CREATE TABLE students (ID int(3) NOT NULL,FIRST_NAME VARCHAR(21) NOT NULL,LAST_NAME VARCHAR(21) NOT NULL,AGE int(3),EMAIL VARCHAR(64) NOT NULL,PRIMARY KEY (id))
+2021-08-18 13:17:49 INFO  Log:25 - Table was created successfully
+2021-08-18 13:17:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:17:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:17:49 INFO  Log:25 - Send request to DB: CREATE TABLE course (ID int(2) NOT NULL,COURSE VARCHAR(45) NOT NULL,CITY VARCHAR(45) NOT NULL,PRIMARY KEY (id))
+2021-08-18 13:17:49 INFO  Log:25 - Table was created successfully
+2021-08-18 13:17:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:17:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:17:49 INFO  Log:25 - Send request to DB: INSERT INTO students (ID, FIRST_NAME, LAST_NAME, AGE, EMAIL) VALUES (1, 'Uladzimir', 'Tarasavets', 28, 'tarasovets21@gmail.com')
+2021-08-18 13:17:49 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:17:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:17:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:17:49 INFO  Log:25 - Send request to DB: SELECT * FROM students
+2021-08-18 13:17:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:17:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:17:50 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  28|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 13:17:50 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:17:50 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:17:50 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (1, 'AQA', 'MINSK')
+2021-08-18 13:17:50 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:17:50 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:17:50 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:17:50 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (2, 'JAVA SE', 'GRODNO')
+2021-08-18 13:17:50 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:17:50 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:17:50 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:17:50 INFO  Log:25 - Send request to DB: SELECT * FROM course
+2021-08-18 13:17:50 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:17:50 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:17:50 INFO  Log:25 - Request results:
++----+------+-----+
+|  ID|COURSE|CITY |
++----+------+-----+
+|   1|AQA   |MINSK|
++----+------+-----+
++----+-------+------+
+|  ID|COURSE |CITY  |
++----+-------+------+
+|   2|JAVA SE|GRODNO|
++----+-------+------+
+
+2021-08-18 13:17:50 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:17:50 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:17:50 INFO  Log:25 - Send request to DB: UPDATE students SET AGE = '29' WHERE ID='1'
+2021-08-18 13:17:50 INFO  Log:25 - Data in table was updated successfully
+2021-08-18 13:17:50 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:17:50 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:17:50 INFO  Log:25 - Send request to DB: SELECT AGE FROM students WHERE ID=1
+2021-08-18 13:17:50 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:17:50 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:17:50 INFO  Log:25 - Request results:
++----+
+| AGE|
++----+
+|  29|
++----+
+
+2021-08-18 13:17:50 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:17:50 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:17:50 INFO  Log:25 - Send request to DB: SELECT * FROM students WHERE LAST_NAME='Tarasavets'
+2021-08-18 13:17:50 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:17:50 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:17:50 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 13:17:50 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:17:50 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:17:50 INFO  Log:25 - Send request to DB: SELECT * FROM students INNER JOIN course ON course.id = students.id
+2021-08-18 13:17:50 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:17:50 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:17:50 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+----+------+-----+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |  ID|COURSE|CITY |
++----+----------+----------+----+----------------------+----+------+-----+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|   1|AQA   |MINSK|
++----+----------+----------+----+----------------------+----+------+-----+
+
+2021-08-18 13:17:50 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:17:50 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:17:50 INFO  Log:25 - Send request to DB: SELECT * FROM students FULL JOIN course JOIN students2 ON course.id = students.id
+2021-08-18 13:17:50 ERROR Log:46 - Table 'sakila.students2' doesn't exist
+2021-08-18 13:17:50 INFO  Log:25 - Send request to DB: DELETE FROM students WHERE ID=1
+2021-08-18 13:17:50 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:17:50 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:17:50 INFO  Log:25 - Data from table was deleted successfully
+2021-08-18 13:17:50 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:17:50 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:17:50 INFO  Log:25 - Send request to DB: DROP TABLE students
+2021-08-18 13:17:51 INFO  Log:25 - Table was deleted successfully
+2021-08-18 13:17:51 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:17:51 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:17:51 INFO  Log:25 - Send request to DB: DROP TABLE course
+2021-08-18 13:17:51 INFO  Log:25 - Table was deleted successfully
+2021-08-18 13:18:31 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:18:32 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:18:32 INFO  Log:25 - Send request to DB: CREATE TABLE students (ID int(3) NOT NULL,FIRST_NAME VARCHAR(21) NOT NULL,LAST_NAME VARCHAR(21) NOT NULL,AGE int(3),EMAIL VARCHAR(64) NOT NULL,PRIMARY KEY (id))
+2021-08-18 13:18:32 INFO  Log:25 - Table was created successfully
+2021-08-18 13:18:32 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:18:32 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:18:32 INFO  Log:25 - Send request to DB: CREATE TABLE course (ID int(2) NOT NULL,COURSE VARCHAR(45) NOT NULL,CITY VARCHAR(45) NOT NULL,PRIMARY KEY (id))
+2021-08-18 13:18:32 INFO  Log:25 - Table was created successfully
+2021-08-18 13:18:32 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:18:32 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:18:32 INFO  Log:25 - Send request to DB: INSERT INTO students (ID, FIRST_NAME, LAST_NAME, AGE, EMAIL) VALUES (1, 'Uladzimir', 'Tarasavets', 28, 'tarasovets21@gmail.com')
+2021-08-18 13:18:32 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:18:32 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:18:32 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:18:32 INFO  Log:25 - Send request to DB: SELECT * FROM students
+2021-08-18 13:18:32 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:18:32 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:18:33 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  28|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 13:18:33 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:18:33 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:18:33 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (1, 'AQA', 'MINSK')
+2021-08-18 13:18:33 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:18:33 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:18:33 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:18:33 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (2, 'JAVA SE', 'GRODNO')
+2021-08-18 13:18:33 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:18:33 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:18:33 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:18:33 INFO  Log:25 - Send request to DB: SELECT * FROM course
+2021-08-18 13:18:33 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:18:33 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:18:33 INFO  Log:25 - Request results:
++----+------+-----+
+|  ID|COURSE|CITY |
++----+------+-----+
+|   1|AQA   |MINSK|
++----+------+-----+
++----+-------+------+
+|  ID|COURSE |CITY  |
++----+-------+------+
+|   2|JAVA SE|GRODNO|
++----+-------+------+
+
+2021-08-18 13:18:33 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:18:33 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:18:33 INFO  Log:25 - Send request to DB: UPDATE students SET AGE = '29' WHERE ID='1'
+2021-08-18 13:18:33 INFO  Log:25 - Data in table was updated successfully
+2021-08-18 13:18:33 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:18:33 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:18:33 INFO  Log:25 - Send request to DB: SELECT AGE FROM students WHERE ID=1
+2021-08-18 13:18:33 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:18:33 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:18:33 INFO  Log:25 - Request results:
++----+
+| AGE|
++----+
+|  29|
++----+
+
+2021-08-18 13:18:33 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:18:33 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:18:33 INFO  Log:25 - Send request to DB: SELECT * FROM students WHERE LAST_NAME='Tarasavets'
+2021-08-18 13:18:33 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:18:33 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:18:33 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 13:18:33 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:18:33 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:18:33 INFO  Log:25 - Send request to DB: SELECT * FROM students INNER JOIN course ON course.id = students.id
+2021-08-18 13:18:33 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:18:33 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:18:33 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+----+------+-----+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |  ID|COURSE|CITY |
++----+----------+----------+----+----------------------+----+------+-----+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|   1|AQA   |MINSK|
++----+----------+----------+----+----------------------+----+------+-----+
+
+2021-08-18 13:18:33 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:18:33 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:18:33 INFO  Log:25 - Send request to DB: SELECT * FROM students FULL JOIN course ON course.id = students.id
+2021-08-18 13:18:33 ERROR Log:46 - Unknown column 'students.id' in 'on clause'
+2021-08-18 13:18:33 INFO  Log:25 - Send request to DB: DELETE FROM students WHERE ID=1
+2021-08-18 13:18:33 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:18:33 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:18:33 INFO  Log:25 - Data from table was deleted successfully
+2021-08-18 13:18:33 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:18:33 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:18:33 INFO  Log:25 - Send request to DB: DROP TABLE students
+2021-08-18 13:18:33 INFO  Log:25 - Table was deleted successfully
+2021-08-18 13:18:33 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:18:33 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:18:33 INFO  Log:25 - Send request to DB: DROP TABLE course
+2021-08-18 13:18:33 INFO  Log:25 - Table was deleted successfully
+2021-08-18 13:19:40 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:19:41 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:19:41 INFO  Log:25 - Send request to DB: CREATE TABLE students (ID int(3) NOT NULL,FIRST_NAME VARCHAR(21) NOT NULL,LAST_NAME VARCHAR(21) NOT NULL,AGE int(3),EMAIL VARCHAR(64) NOT NULL,PRIMARY KEY (id))
+2021-08-18 13:19:41 INFO  Log:25 - Table was created successfully
+2021-08-18 13:19:41 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:19:41 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:19:41 INFO  Log:25 - Send request to DB: CREATE TABLE course (ID int(2) NOT NULL,COURSE VARCHAR(45) NOT NULL,CITY VARCHAR(45) NOT NULL,PRIMARY KEY (id))
+2021-08-18 13:19:41 INFO  Log:25 - Table was created successfully
+2021-08-18 13:19:41 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:19:41 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:19:41 INFO  Log:25 - Send request to DB: INSERT INTO students (ID, FIRST_NAME, LAST_NAME, AGE, EMAIL) VALUES (1, 'Uladzimir', 'Tarasavets', 28, 'tarasovets21@gmail.com')
+2021-08-18 13:19:41 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:19:41 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:19:41 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:19:41 INFO  Log:25 - Send request to DB: SELECT * FROM students
+2021-08-18 13:19:41 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:19:41 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:19:42 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  28|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 13:19:42 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:19:42 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:19:42 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (1, 'AQA', 'MINSK')
+2021-08-18 13:19:42 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:19:42 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:19:42 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:19:42 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (2, 'JAVA SE', 'GRODNO')
+2021-08-18 13:19:42 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:19:42 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:19:42 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:19:42 INFO  Log:25 - Send request to DB: SELECT * FROM course
+2021-08-18 13:19:42 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:19:42 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:19:42 INFO  Log:25 - Request results:
++----+------+-----+
+|  ID|COURSE|CITY |
++----+------+-----+
+|   1|AQA   |MINSK|
++----+------+-----+
++----+-------+------+
+|  ID|COURSE |CITY  |
++----+-------+------+
+|   2|JAVA SE|GRODNO|
++----+-------+------+
+
+2021-08-18 13:19:42 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:19:42 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:19:42 INFO  Log:25 - Send request to DB: UPDATE students SET AGE = '29' WHERE ID='1'
+2021-08-18 13:19:42 INFO  Log:25 - Data in table was updated successfully
+2021-08-18 13:19:42 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:19:42 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:19:42 INFO  Log:25 - Send request to DB: SELECT AGE FROM students WHERE ID=1
+2021-08-18 13:19:42 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:19:42 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:19:42 INFO  Log:25 - Request results:
++----+
+| AGE|
++----+
+|  29|
++----+
+
+2021-08-18 13:19:42 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:19:42 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:19:42 INFO  Log:25 - Send request to DB: SELECT * FROM students WHERE LAST_NAME='Tarasavets'
+2021-08-18 13:19:42 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:19:42 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:19:42 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 13:19:42 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:19:42 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:19:42 INFO  Log:25 - Send request to DB: SELECT * FROM students INNER JOIN course ON course.id = students.id
+2021-08-18 13:19:42 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:19:42 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:19:42 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+----+------+-----+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |  ID|COURSE|CITY |
++----+----------+----------+----+----------------------+----+------+-----+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|   1|AQA   |MINSK|
++----+----------+----------+----+----------------------+----+------+-----+
+
+2021-08-18 13:19:42 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:19:42 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:19:42 INFO  Log:25 - Send request to DB: SELECT * FROM students FULL JOIN course ON (course.id = students.id)
+2021-08-18 13:19:43 ERROR Log:46 - Unknown column 'students.id' in 'on clause'
+2021-08-18 13:19:43 INFO  Log:25 - Send request to DB: DELETE FROM students WHERE ID=1
+2021-08-18 13:19:43 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:19:43 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:19:43 INFO  Log:25 - Data from table was deleted successfully
+2021-08-18 13:19:43 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:19:43 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:19:43 INFO  Log:25 - Send request to DB: DROP TABLE students
+2021-08-18 13:19:43 INFO  Log:25 - Table was deleted successfully
+2021-08-18 13:19:43 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:19:43 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:19:43 INFO  Log:25 - Send request to DB: DROP TABLE course
+2021-08-18 13:19:43 INFO  Log:25 - Table was deleted successfully
+2021-08-18 13:24:01 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:02 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:02 INFO  Log:25 - Send request to DB: CREATE TABLE students (ID int(3) NOT NULL,FIRST_NAME VARCHAR(21) NOT NULL,LAST_NAME VARCHAR(21) NOT NULL,AGE int(3),EMAIL VARCHAR(64) NOT NULL,PRIMARY KEY (id))
+2021-08-18 13:24:02 INFO  Log:25 - Table was created successfully
+2021-08-18 13:24:02 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:02 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:02 INFO  Log:25 - Send request to DB: CREATE TABLE course (ID int(2) NOT NULL,COURSE VARCHAR(45) NOT NULL,CITY VARCHAR(45) NOT NULL,PRIMARY KEY (id))
+2021-08-18 13:24:02 INFO  Log:25 - Table was created successfully
+2021-08-18 13:24:02 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:03 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:03 INFO  Log:25 - Send request to DB: INSERT INTO students (ID, FIRST_NAME, LAST_NAME, AGE, EMAIL) VALUES (1, 'Uladzimir', 'Tarasavets', 28, 'tarasovets21@gmail.com')
+2021-08-18 13:24:03 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:24:03 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:03 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:03 INFO  Log:25 - Send request to DB: SELECT * FROM students
+2021-08-18 13:24:03 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:03 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:04 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  28|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 13:24:04 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:04 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:04 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (1, 'AQA', 'MINSK')
+2021-08-18 13:24:04 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:24:04 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:04 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:04 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (2, 'JAVA SE', 'GRODNO')
+2021-08-18 13:24:04 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:24:04 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:04 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:04 INFO  Log:25 - Send request to DB: SELECT * FROM course
+2021-08-18 13:24:04 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:04 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:04 INFO  Log:25 - Request results:
++----+------+-----+
+|  ID|COURSE|CITY |
++----+------+-----+
+|   1|AQA   |MINSK|
++----+------+-----+
++----+-------+------+
+|  ID|COURSE |CITY  |
++----+-------+------+
+|   2|JAVA SE|GRODNO|
++----+-------+------+
+
+2021-08-18 13:24:04 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:04 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:04 INFO  Log:25 - Send request to DB: UPDATE students SET AGE = '29' WHERE ID='1'
+2021-08-18 13:24:04 INFO  Log:25 - Data in table was updated successfully
+2021-08-18 13:24:04 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:04 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:04 INFO  Log:25 - Send request to DB: SELECT AGE FROM students WHERE ID=1
+2021-08-18 13:24:04 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:04 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:04 INFO  Log:25 - Request results:
++----+
+| AGE|
++----+
+|  29|
++----+
+
+2021-08-18 13:24:04 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:04 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:04 INFO  Log:25 - Send request to DB: SELECT * FROM students WHERE LAST_NAME='Tarasavets'
+2021-08-18 13:24:04 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:04 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:04 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 13:24:04 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:04 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:04 INFO  Log:25 - Send request to DB: SELECT * FROM students INNER JOIN course ON course.id = students.id
+2021-08-18 13:24:04 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:04 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:04 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+----+------+-----+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |  ID|COURSE|CITY |
++----+----------+----------+----+----------------------+----+------+-----+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|   1|AQA   |MINSK|
++----+----------+----------+----+----------------------+----+------+-----+
+
+2021-08-18 13:24:04 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:04 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:04 INFO  Log:25 - Send request to DB: SELECT * FROM course FULL JOIN students ON (course.id = students.id)
+2021-08-18 13:24:04 ERROR Log:46 - Unknown column 'course.id' in 'on clause'
+2021-08-18 13:24:04 INFO  Log:25 - Send request to DB: DELETE FROM students WHERE ID=1
+2021-08-18 13:24:04 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:04 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:04 INFO  Log:25 - Data from table was deleted successfully
+2021-08-18 13:24:04 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:04 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:04 INFO  Log:25 - Send request to DB: DROP TABLE students
+2021-08-18 13:24:04 INFO  Log:25 - Table was deleted successfully
+2021-08-18 13:24:04 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:04 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:04 INFO  Log:25 - Send request to DB: DROP TABLE course
+2021-08-18 13:24:04 INFO  Log:25 - Table was deleted successfully
+2021-08-18 13:24:28 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:29 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:29 INFO  Log:25 - Send request to DB: CREATE TABLE students (ID int(3) NOT NULL,FIRST_NAME VARCHAR(21) NOT NULL,LAST_NAME VARCHAR(21) NOT NULL,AGE int(3),EMAIL VARCHAR(64) NOT NULL,PRIMARY KEY (id))
+2021-08-18 13:24:29 INFO  Log:25 - Table was created successfully
+2021-08-18 13:24:29 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:29 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:29 INFO  Log:25 - Send request to DB: CREATE TABLE course (ID int(2) NOT NULL,COURSE VARCHAR(45) NOT NULL,CITY VARCHAR(45) NOT NULL,PRIMARY KEY (id))
+2021-08-18 13:24:29 INFO  Log:25 - Table was created successfully
+2021-08-18 13:24:29 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:29 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:29 INFO  Log:25 - Send request to DB: INSERT INTO students (ID, FIRST_NAME, LAST_NAME, AGE, EMAIL) VALUES (1, 'Uladzimir', 'Tarasavets', 28, 'tarasovets21@gmail.com')
+2021-08-18 13:24:29 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:24:29 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:29 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:29 INFO  Log:25 - Send request to DB: SELECT * FROM students
+2021-08-18 13:24:29 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:29 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:30 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  28|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 13:24:30 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:30 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:30 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (1, 'AQA', 'MINSK')
+2021-08-18 13:24:30 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:24:30 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:30 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:30 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (2, 'JAVA SE', 'GRODNO')
+2021-08-18 13:24:30 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:24:30 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:30 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:30 INFO  Log:25 - Send request to DB: SELECT * FROM course
+2021-08-18 13:24:30 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:30 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:30 INFO  Log:25 - Request results:
++----+------+-----+
+|  ID|COURSE|CITY |
++----+------+-----+
+|   1|AQA   |MINSK|
++----+------+-----+
++----+-------+------+
+|  ID|COURSE |CITY  |
++----+-------+------+
+|   2|JAVA SE|GRODNO|
++----+-------+------+
+
+2021-08-18 13:24:30 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:30 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:30 INFO  Log:25 - Send request to DB: UPDATE students SET AGE = '29' WHERE ID='1'
+2021-08-18 13:24:30 INFO  Log:25 - Data in table was updated successfully
+2021-08-18 13:24:30 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:30 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:30 INFO  Log:25 - Send request to DB: SELECT AGE FROM students WHERE ID=1
+2021-08-18 13:24:30 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:30 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:30 INFO  Log:25 - Request results:
++----+
+| AGE|
++----+
+|  29|
++----+
+
+2021-08-18 13:24:30 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:30 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:30 INFO  Log:25 - Send request to DB: SELECT * FROM students WHERE LAST_NAME='Tarasavets'
+2021-08-18 13:24:30 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:30 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:30 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 13:24:30 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:31 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:31 INFO  Log:25 - Send request to DB: SELECT * FROM students INNER JOIN course ON course.id = students.id
+2021-08-18 13:24:31 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:31 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:31 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+----+------+-----+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |  ID|COURSE|CITY |
++----+----------+----------+----+----------------------+----+------+-----+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|   1|AQA   |MINSK|
++----+----------+----------+----+----------------------+----+------+-----+
+
+2021-08-18 13:24:31 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:31 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:31 INFO  Log:25 - Send request to DB: SELECT * FROM course FULL JOIN students ON (id = students.id)
+2021-08-18 13:24:31 ERROR Log:46 - Column 'id' in on clause is ambiguous
+2021-08-18 13:24:31 INFO  Log:25 - Send request to DB: DELETE FROM students WHERE ID=1
+2021-08-18 13:24:31 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:31 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:31 INFO  Log:25 - Data from table was deleted successfully
+2021-08-18 13:24:31 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:31 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:31 INFO  Log:25 - Send request to DB: DROP TABLE students
+2021-08-18 13:24:31 INFO  Log:25 - Table was deleted successfully
+2021-08-18 13:24:31 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:24:31 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:24:31 INFO  Log:25 - Send request to DB: DROP TABLE course
+2021-08-18 13:24:31 INFO  Log:25 - Table was deleted successfully
+2021-08-18 13:30:47 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:30:47 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:30:47 INFO  Log:25 - Send request to DB: CREATE TABLE students (ID int(3) NOT NULL,FIRST_NAME VARCHAR(21) NOT NULL,LAST_NAME VARCHAR(21) NOT NULL,AGE int(3),EMAIL VARCHAR(64) NOT NULL,PRIMARY KEY (id))
+2021-08-18 13:30:47 INFO  Log:25 - Table was created successfully
+2021-08-18 13:30:48 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:30:48 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:30:48 INFO  Log:25 - Send request to DB: CREATE TABLE course (ID int(2) NOT NULL,COURSE VARCHAR(45) NOT NULL,CITY VARCHAR(45) NOT NULL,PRIMARY KEY (id))
+2021-08-18 13:30:48 INFO  Log:25 - Table was created successfully
+2021-08-18 13:30:48 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:30:48 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:30:48 INFO  Log:25 - Send request to DB: INSERT INTO students (ID, FIRST_NAME, LAST_NAME, AGE, EMAIL) VALUES (1, 'Uladzimir', 'Tarasavets', 28, 'tarasovets21@gmail.com')
+2021-08-18 13:30:48 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:30:48 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:30:48 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:30:48 INFO  Log:25 - Send request to DB: SELECT * FROM students
+2021-08-18 13:30:48 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:30:48 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:30:49 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  28|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 13:30:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:30:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:30:49 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (1, 'AQA', 'MINSK')
+2021-08-18 13:30:49 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:30:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:30:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:30:49 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (2, 'JAVA SE', 'GRODNO')
+2021-08-18 13:30:49 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:30:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:30:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:30:49 INFO  Log:25 - Send request to DB: SELECT * FROM course
+2021-08-18 13:30:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:30:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:30:49 INFO  Log:25 - Request results:
++----+------+-----+
+|  ID|COURSE|CITY |
++----+------+-----+
+|   1|AQA   |MINSK|
++----+------+-----+
++----+-------+------+
+|  ID|COURSE |CITY  |
++----+-------+------+
+|   2|JAVA SE|GRODNO|
++----+-------+------+
+
+2021-08-18 13:30:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:30:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:30:49 INFO  Log:25 - Send request to DB: UPDATE students SET AGE = '29' WHERE ID='1'
+2021-08-18 13:30:49 INFO  Log:25 - Data in table was updated successfully
+2021-08-18 13:30:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:30:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:30:49 INFO  Log:25 - Send request to DB: SELECT AGE FROM students WHERE ID=1
+2021-08-18 13:30:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:30:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:30:49 INFO  Log:25 - Request results:
++----+
+| AGE|
++----+
+|  29|
++----+
+
+2021-08-18 13:30:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:30:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:30:49 INFO  Log:25 - Send request to DB: SELECT * FROM students WHERE LAST_NAME='Tarasavets'
+2021-08-18 13:30:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:30:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:30:49 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 13:30:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:30:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:30:49 INFO  Log:25 - Send request to DB: SELECT * FROM students INNER JOIN course ON course.id = students.id
+2021-08-18 13:30:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:30:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:30:49 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+----+------+-----+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |  ID|COURSE|CITY |
++----+----------+----------+----+----------------------+----+------+-----+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|   1|AQA   |MINSK|
++----+----------+----------+----+----------------------+----+------+-----+
+
+2021-08-18 13:30:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:30:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:30:49 INFO  Log:25 - Send request to DB: SELECT * FROM course FULL JOIN students ON (course.id = students.id)WHERE course.id IS nullOR students.id IS null
+2021-08-18 13:30:49 ERROR Log:46 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'nullOR students.id IS null' at line 1
+2021-08-18 13:30:49 INFO  Log:25 - Send request to DB: DELETE FROM students WHERE ID=1
+2021-08-18 13:30:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:30:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:30:49 INFO  Log:25 - Data from table was deleted successfully
+2021-08-18 13:30:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:30:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:30:49 INFO  Log:25 - Send request to DB: DROP TABLE students
+2021-08-18 13:30:49 INFO  Log:25 - Table was deleted successfully
+2021-08-18 13:30:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:30:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:30:49 INFO  Log:25 - Send request to DB: DROP TABLE course
+2021-08-18 13:30:49 INFO  Log:25 - Table was deleted successfully
+2021-08-18 13:35:39 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:35:40 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:35:40 INFO  Log:25 - Send request to DB: CREATE TABLE students (ID int(3) NOT NULL,FIRST_NAME VARCHAR(21) NOT NULL,LAST_NAME VARCHAR(21) NOT NULL,AGE int(3),EMAIL VARCHAR(64) NOT NULL,PRIMARY KEY (id))
+2021-08-18 13:35:40 INFO  Log:25 - Table was created successfully
+2021-08-18 13:35:40 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:35:40 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:35:40 INFO  Log:25 - Send request to DB: CREATE TABLE course (ID int(2) NOT NULL,COURSE VARCHAR(45) NOT NULL,CITY VARCHAR(45) NOT NULL,PRIMARY KEY (id))
+2021-08-18 13:35:40 INFO  Log:25 - Table was created successfully
+2021-08-18 13:35:40 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:35:40 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:35:40 INFO  Log:25 - Send request to DB: INSERT INTO students (ID, FIRST_NAME, LAST_NAME, AGE, EMAIL) VALUES (1, 'Uladzimir', 'Tarasavets', 28, 'tarasovets21@gmail.com')
+2021-08-18 13:35:40 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:35:40 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:35:40 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:35:40 INFO  Log:25 - Send request to DB: SELECT * FROM students
+2021-08-18 13:35:40 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:35:40 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:35:41 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  28|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 13:35:41 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:35:41 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:35:41 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (1, 'AQA', 'MINSK')
+2021-08-18 13:35:41 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:35:41 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:35:41 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:35:41 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (2, 'JAVA SE', 'GRODNO')
+2021-08-18 13:35:41 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:35:41 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:35:41 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:35:41 INFO  Log:25 - Send request to DB: SELECT * FROM course
+2021-08-18 13:35:41 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:35:41 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:35:41 INFO  Log:25 - Request results:
++----+------+-----+
+|  ID|COURSE|CITY |
++----+------+-----+
+|   1|AQA   |MINSK|
++----+------+-----+
++----+-------+------+
+|  ID|COURSE |CITY  |
++----+-------+------+
+|   2|JAVA SE|GRODNO|
++----+-------+------+
+
+2021-08-18 13:35:41 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:35:41 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:35:41 INFO  Log:25 - Send request to DB: UPDATE students SET AGE = '29' WHERE ID='1'
+2021-08-18 13:35:41 INFO  Log:25 - Data in table was updated successfully
+2021-08-18 13:35:41 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:35:41 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:35:41 INFO  Log:25 - Send request to DB: SELECT AGE FROM students WHERE ID=1
+2021-08-18 13:35:41 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:35:41 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:35:41 INFO  Log:25 - Request results:
++----+
+| AGE|
++----+
+|  29|
++----+
+
+2021-08-18 13:35:41 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:35:41 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:35:41 INFO  Log:25 - Send request to DB: SELECT * FROM students WHERE LAST_NAME='Tarasavets'
+2021-08-18 13:35:41 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:35:41 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:35:41 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 13:35:41 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:35:41 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:35:41 INFO  Log:25 - Send request to DB: SELECT * FROM students INNER JOIN course ON course.id = students.id
+2021-08-18 13:35:41 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:35:41 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:35:41 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+----+------+-----+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |  ID|COURSE|CITY |
++----+----------+----------+----+----------------------+----+------+-----+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|   1|AQA   |MINSK|
++----+----------+----------+----+----------------------+----+------+-----+
+
+2021-08-18 13:35:41 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:35:41 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:35:41 INFO  Log:25 - Send request to DB: SELECT * FROM course FULL OUTER JOIN students ON (course.id = students.id)
+2021-08-18 13:35:41 ERROR Log:46 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OUTER JOIN students ON (course.id = students.id)' at line 1
+2021-08-18 13:35:41 INFO  Log:25 - Send request to DB: DELETE FROM students WHERE ID=1
+2021-08-18 13:35:41 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:35:42 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:35:42 INFO  Log:25 - Data from table was deleted successfully
+2021-08-18 13:35:42 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:35:42 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:35:42 INFO  Log:25 - Send request to DB: DROP TABLE students
+2021-08-18 13:35:42 INFO  Log:25 - Table was deleted successfully
+2021-08-18 13:35:42 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:35:42 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:35:42 INFO  Log:25 - Send request to DB: DROP TABLE course
+2021-08-18 13:35:42 INFO  Log:25 - Table was deleted successfully
+2021-08-18 13:36:26 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:27 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:27 INFO  Log:25 - Send request to DB: CREATE TABLE students (ID int(3) NOT NULL,FIRST_NAME VARCHAR(21) NOT NULL,LAST_NAME VARCHAR(21) NOT NULL,AGE int(3),EMAIL VARCHAR(64) NOT NULL,PRIMARY KEY (id))
+2021-08-18 13:36:27 INFO  Log:25 - Table was created successfully
+2021-08-18 13:36:27 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:27 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:27 INFO  Log:25 - Send request to DB: CREATE TABLE course (ID int(2) NOT NULL,COURSE VARCHAR(45) NOT NULL,CITY VARCHAR(45) NOT NULL,PRIMARY KEY (id))
+2021-08-18 13:36:27 INFO  Log:25 - Table was created successfully
+2021-08-18 13:36:27 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:27 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:27 INFO  Log:25 - Send request to DB: INSERT INTO students (ID, FIRST_NAME, LAST_NAME, AGE, EMAIL) VALUES (1, 'Uladzimir', 'Tarasavets', 28, 'tarasovets21@gmail.com')
+2021-08-18 13:36:27 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:36:27 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:27 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:27 INFO  Log:25 - Send request to DB: SELECT * FROM students
+2021-08-18 13:36:27 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:27 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:28 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  28|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 13:36:28 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:28 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:28 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (1, 'AQA', 'MINSK')
+2021-08-18 13:36:28 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:36:28 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:28 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:28 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (2, 'JAVA SE', 'GRODNO')
+2021-08-18 13:36:28 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:36:28 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:28 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:28 INFO  Log:25 - Send request to DB: SELECT * FROM course
+2021-08-18 13:36:28 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:28 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:28 INFO  Log:25 - Request results:
++----+------+-----+
+|  ID|COURSE|CITY |
++----+------+-----+
+|   1|AQA   |MINSK|
++----+------+-----+
++----+-------+------+
+|  ID|COURSE |CITY  |
++----+-------+------+
+|   2|JAVA SE|GRODNO|
++----+-------+------+
+
+2021-08-18 13:36:28 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:28 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:28 INFO  Log:25 - Send request to DB: UPDATE students SET AGE = '29' WHERE ID='1'
+2021-08-18 13:36:28 INFO  Log:25 - Data in table was updated successfully
+2021-08-18 13:36:28 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:28 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:28 INFO  Log:25 - Send request to DB: SELECT AGE FROM students WHERE ID=1
+2021-08-18 13:36:28 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:28 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:28 INFO  Log:25 - Request results:
++----+
+| AGE|
++----+
+|  29|
++----+
+
+2021-08-18 13:36:28 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:28 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:28 INFO  Log:25 - Send request to DB: SELECT * FROM students WHERE LAST_NAME='Tarasavets'
+2021-08-18 13:36:28 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:28 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:28 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 13:36:28 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:28 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:28 INFO  Log:25 - Send request to DB: SELECT * FROM students INNER JOIN course ON course.id = students.id
+2021-08-18 13:36:28 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:28 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:28 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+----+------+-----+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |  ID|COURSE|CITY |
++----+----------+----------+----+----------------------+----+------+-----+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|   1|AQA   |MINSK|
++----+----------+----------+----+----------------------+----+------+-----+
+
+2021-08-18 13:36:28 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:28 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:28 INFO  Log:25 - Send request to DB: SELECT * FROM course FULL OUTER JOIN students ON course.id = students.id
+2021-08-18 13:36:28 ERROR Log:46 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OUTER JOIN students ON course.id = students.id' at line 1
+2021-08-18 13:36:28 INFO  Log:25 - Send request to DB: DELETE FROM students WHERE ID=1
+2021-08-18 13:36:28 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:28 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:28 INFO  Log:25 - Data from table was deleted successfully
+2021-08-18 13:36:28 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:29 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:29 INFO  Log:25 - Send request to DB: DROP TABLE students
+2021-08-18 13:36:29 INFO  Log:25 - Table was deleted successfully
+2021-08-18 13:36:29 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:29 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:29 INFO  Log:25 - Send request to DB: DROP TABLE course
+2021-08-18 13:36:29 INFO  Log:25 - Table was deleted successfully
+2021-08-18 13:36:42 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:42 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:42 INFO  Log:25 - Send request to DB: CREATE TABLE students (ID int(3) NOT NULL,FIRST_NAME VARCHAR(21) NOT NULL,LAST_NAME VARCHAR(21) NOT NULL,AGE int(3),EMAIL VARCHAR(64) NOT NULL,PRIMARY KEY (id))
+2021-08-18 13:36:42 INFO  Log:25 - Table was created successfully
+2021-08-18 13:36:42 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:43 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:43 INFO  Log:25 - Send request to DB: CREATE TABLE course (ID int(2) NOT NULL,COURSE VARCHAR(45) NOT NULL,CITY VARCHAR(45) NOT NULL,PRIMARY KEY (id))
+2021-08-18 13:36:43 INFO  Log:25 - Table was created successfully
+2021-08-18 13:36:43 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:43 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:43 INFO  Log:25 - Send request to DB: INSERT INTO students (ID, FIRST_NAME, LAST_NAME, AGE, EMAIL) VALUES (1, 'Uladzimir', 'Tarasavets', 28, 'tarasovets21@gmail.com')
+2021-08-18 13:36:43 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:36:43 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:43 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:43 INFO  Log:25 - Send request to DB: SELECT * FROM students
+2021-08-18 13:36:43 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:43 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:44 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  28|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 13:36:44 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:44 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:44 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (1, 'AQA', 'MINSK')
+2021-08-18 13:36:44 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:36:44 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:44 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:44 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (2, 'JAVA SE', 'GRODNO')
+2021-08-18 13:36:44 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:36:44 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:44 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:44 INFO  Log:25 - Send request to DB: SELECT * FROM course
+2021-08-18 13:36:44 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:44 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:44 INFO  Log:25 - Request results:
++----+------+-----+
+|  ID|COURSE|CITY |
++----+------+-----+
+|   1|AQA   |MINSK|
++----+------+-----+
++----+-------+------+
+|  ID|COURSE |CITY  |
++----+-------+------+
+|   2|JAVA SE|GRODNO|
++----+-------+------+
+
+2021-08-18 13:36:44 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:44 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:44 INFO  Log:25 - Send request to DB: UPDATE students SET AGE = '29' WHERE ID='1'
+2021-08-18 13:36:44 INFO  Log:25 - Data in table was updated successfully
+2021-08-18 13:36:44 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:44 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:44 INFO  Log:25 - Send request to DB: SELECT AGE FROM students WHERE ID=1
+2021-08-18 13:36:44 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:44 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:44 INFO  Log:25 - Request results:
++----+
+| AGE|
++----+
+|  29|
++----+
+
+2021-08-18 13:36:44 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:44 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:44 INFO  Log:25 - Send request to DB: SELECT * FROM students WHERE LAST_NAME='Tarasavets'
+2021-08-18 13:36:44 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:44 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:44 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 13:36:44 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:44 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:44 INFO  Log:25 - Send request to DB: SELECT * FROM students INNER JOIN course ON course.id = students.id
+2021-08-18 13:36:44 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:44 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:44 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+----+------+-----+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |  ID|COURSE|CITY |
++----+----------+----------+----+----------------------+----+------+-----+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|   1|AQA   |MINSK|
++----+----------+----------+----+----------------------+----+------+-----+
+
+2021-08-18 13:36:44 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:44 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:44 INFO  Log:25 - Send request to DB: SELECT * FROM course FULL JOIN students ON course.id = students.id
+2021-08-18 13:36:44 ERROR Log:46 - Unknown column 'course.id' in 'on clause'
+2021-08-18 13:36:44 INFO  Log:25 - Send request to DB: DELETE FROM students WHERE ID=1
+2021-08-18 13:36:44 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:44 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:44 INFO  Log:25 - Data from table was deleted successfully
+2021-08-18 13:36:44 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:44 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:44 INFO  Log:25 - Send request to DB: DROP TABLE students
+2021-08-18 13:36:44 INFO  Log:25 - Table was deleted successfully
+2021-08-18 13:36:44 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:36:44 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:36:44 INFO  Log:25 - Send request to DB: DROP TABLE course
+2021-08-18 13:36:44 INFO  Log:25 - Table was deleted successfully
+2021-08-18 13:37:54 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:37:55 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:37:55 INFO  Log:25 - Send request to DB: CREATE TABLE students (ID int(3) NOT NULL,FIRST_NAME VARCHAR(21) NOT NULL,LAST_NAME VARCHAR(21) NOT NULL,AGE int(3),EMAIL VARCHAR(64) NOT NULL,PRIMARY KEY (id))
+2021-08-18 13:37:55 INFO  Log:25 - Table was created successfully
+2021-08-18 13:37:55 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:37:55 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:37:55 INFO  Log:25 - Send request to DB: CREATE TABLE course (ID int(2) NOT NULL,COURSE VARCHAR(45) NOT NULL,CITY VARCHAR(45) NOT NULL,PRIMARY KEY (id))
+2021-08-18 13:37:55 INFO  Log:25 - Table was created successfully
+2021-08-18 13:37:55 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:37:55 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:37:55 INFO  Log:25 - Send request to DB: INSERT INTO students (ID, FIRST_NAME, LAST_NAME, AGE, EMAIL) VALUES (1, 'Uladzimir', 'Tarasavets', 28, 'tarasovets21@gmail.com')
+2021-08-18 13:37:55 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:37:55 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:37:55 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:37:55 INFO  Log:25 - Send request to DB: SELECT * FROM students
+2021-08-18 13:37:55 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:37:55 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:37:56 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  28|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 13:37:56 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:37:56 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:37:56 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (1, 'AQA', 'MINSK')
+2021-08-18 13:37:56 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:37:56 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:37:56 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:37:56 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (2, 'JAVA SE', 'GRODNO')
+2021-08-18 13:37:56 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:37:56 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:37:56 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:37:56 INFO  Log:25 - Send request to DB: SELECT * FROM course
+2021-08-18 13:37:56 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:37:56 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:37:56 INFO  Log:25 - Request results:
++----+------+-----+
+|  ID|COURSE|CITY |
++----+------+-----+
+|   1|AQA   |MINSK|
++----+------+-----+
++----+-------+------+
+|  ID|COURSE |CITY  |
++----+-------+------+
+|   2|JAVA SE|GRODNO|
++----+-------+------+
+
+2021-08-18 13:37:56 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:37:56 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:37:56 INFO  Log:25 - Send request to DB: UPDATE students SET AGE = '29' WHERE ID='1'
+2021-08-18 13:37:56 INFO  Log:25 - Data in table was updated successfully
+2021-08-18 13:37:56 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:37:56 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:37:56 INFO  Log:25 - Send request to DB: SELECT AGE FROM students WHERE ID=1
+2021-08-18 13:37:56 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:37:56 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:37:56 INFO  Log:25 - Request results:
++----+
+| AGE|
++----+
+|  29|
++----+
+
+2021-08-18 13:37:56 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:37:56 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:37:56 INFO  Log:25 - Send request to DB: SELECT * FROM students WHERE LAST_NAME='Tarasavets'
+2021-08-18 13:37:56 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:37:56 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:37:56 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 13:37:56 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:37:56 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:37:56 INFO  Log:25 - Send request to DB: SELECT * FROM students INNER JOIN course ON course.id = students.id
+2021-08-18 13:37:56 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:37:56 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:37:56 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+----+------+-----+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |  ID|COURSE|CITY |
++----+----------+----------+----+----------------------+----+------+-----+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|   1|AQA   |MINSK|
++----+----------+----------+----+----------------------+----+------+-----+
+
+2021-08-18 13:37:56 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:37:56 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:37:56 INFO  Log:25 - Send request to DB: SELECT * FROM course FULL OUTER JOIN students ON course.id = students.id
+2021-08-18 13:37:56 ERROR Log:46 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OUTER JOIN students ON course.id = students.id' at line 1
+2021-08-18 13:37:56 INFO  Log:25 - Send request to DB: DELETE FROM students WHERE ID=1
+2021-08-18 13:37:56 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:37:56 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:37:56 INFO  Log:25 - Data from table was deleted successfully
+2021-08-18 13:37:56 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:37:56 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:37:56 INFO  Log:25 - Send request to DB: DROP TABLE students
+2021-08-18 13:37:56 INFO  Log:25 - Table was deleted successfully
+2021-08-18 13:37:56 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:37:56 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:37:56 INFO  Log:25 - Send request to DB: DROP TABLE course
+2021-08-18 13:37:56 INFO  Log:25 - Table was deleted successfully
+2021-08-18 13:39:09 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:39:10 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:39:10 INFO  Log:25 - Send request to DB: CREATE TABLE students (ID int(3) NOT NULL,FIRST_NAME VARCHAR(21) NOT NULL,LAST_NAME VARCHAR(21) NOT NULL,AGE int(3),EMAIL VARCHAR(64) NOT NULL,PRIMARY KEY (id))
+2021-08-18 13:39:10 INFO  Log:25 - Table was created successfully
+2021-08-18 13:39:10 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:39:10 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:39:10 INFO  Log:25 - Send request to DB: CREATE TABLE course (ID int(2) NOT NULL,COURSE VARCHAR(45) NOT NULL,CITY VARCHAR(45) NOT NULL,PRIMARY KEY (id))
+2021-08-18 13:39:10 INFO  Log:25 - Table was created successfully
+2021-08-18 13:39:10 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:39:10 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:39:10 INFO  Log:25 - Send request to DB: INSERT INTO students (ID, FIRST_NAME, LAST_NAME, AGE, EMAIL) VALUES (1, 'Uladzimir', 'Tarasavets', 28, 'tarasovets21@gmail.com')
+2021-08-18 13:39:10 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:39:10 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:39:10 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:39:10 INFO  Log:25 - Send request to DB: SELECT * FROM students
+2021-08-18 13:39:10 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:39:10 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:39:11 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  28|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 13:39:11 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:39:11 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:39:11 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (1, 'AQA', 'MINSK')
+2021-08-18 13:39:11 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:39:11 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:39:11 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:39:11 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (2, 'JAVA SE', 'GRODNO')
+2021-08-18 13:39:11 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:39:11 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:39:11 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:39:11 INFO  Log:25 - Send request to DB: SELECT * FROM course
+2021-08-18 13:39:11 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:39:11 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:39:11 INFO  Log:25 - Request results:
++----+------+-----+
+|  ID|COURSE|CITY |
++----+------+-----+
+|   1|AQA   |MINSK|
++----+------+-----+
++----+-------+------+
+|  ID|COURSE |CITY  |
++----+-------+------+
+|   2|JAVA SE|GRODNO|
++----+-------+------+
+
+2021-08-18 13:39:11 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:39:11 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:39:11 INFO  Log:25 - Send request to DB: UPDATE students SET AGE = '29' WHERE ID='1'
+2021-08-18 13:39:11 INFO  Log:25 - Data in table was updated successfully
+2021-08-18 13:39:11 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:39:11 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:39:11 INFO  Log:25 - Send request to DB: SELECT AGE FROM students WHERE ID=1
+2021-08-18 13:39:11 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:39:11 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:39:11 INFO  Log:25 - Request results:
++----+
+| AGE|
++----+
+|  29|
++----+
+
+2021-08-18 13:39:11 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:39:11 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:39:11 INFO  Log:25 - Send request to DB: SELECT * FROM students WHERE LAST_NAME='Tarasavets'
+2021-08-18 13:39:11 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:39:11 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:39:11 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 13:39:11 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:39:11 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:39:11 INFO  Log:25 - Send request to DB: SELECT * FROM students INNER JOIN course ON course.id = students.id
+2021-08-18 13:39:11 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:39:11 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:39:11 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+----+------+-----+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |  ID|COURSE|CITY |
++----+----------+----------+----+----------------------+----+------+-----+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|   1|AQA   |MINSK|
++----+----------+----------+----+----------------------+----+------+-----+
+
+2021-08-18 13:39:11 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:39:11 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:39:11 INFO  Log:25 - Send request to DB: SELECT * FROM course FULL JOIN students ON course.id = students.id
+2021-08-18 13:39:11 ERROR Log:46 - Unknown column 'course.id' in 'on clause'
+2021-08-18 13:39:11 INFO  Log:25 - Send request to DB: DELETE FROM students WHERE ID=1
+2021-08-18 13:39:11 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:39:11 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:39:11 INFO  Log:25 - Data from table was deleted successfully
+2021-08-18 13:39:11 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:39:11 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:39:11 INFO  Log:25 - Send request to DB: DROP TABLE students
+2021-08-18 13:39:11 INFO  Log:25 - Table was deleted successfully
+2021-08-18 13:39:11 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:39:11 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:39:11 INFO  Log:25 - Send request to DB: DROP TABLE course
+2021-08-18 13:39:11 INFO  Log:25 - Table was deleted successfully
+2021-08-18 13:41:23 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:41:24 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:41:24 INFO  Log:25 - Send request to DB: CREATE TABLE students (ID int(3) NOT NULL,FIRST_NAME VARCHAR(21) NOT NULL,LAST_NAME VARCHAR(21) NOT NULL,AGE int(3),EMAIL VARCHAR(64) NOT NULL,PRIMARY KEY (id))
+2021-08-18 13:41:24 INFO  Log:25 - Table was created successfully
+2021-08-18 13:41:24 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:41:24 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:41:24 INFO  Log:25 - Send request to DB: CREATE TABLE course (ID int(2) NOT NULL,COURSE VARCHAR(45) NOT NULL,CITY VARCHAR(45) NOT NULL,PRIMARY KEY (id))
+2021-08-18 13:41:24 INFO  Log:25 - Table was created successfully
+2021-08-18 13:41:24 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:41:24 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:41:24 INFO  Log:25 - Send request to DB: INSERT INTO students (ID, FIRST_NAME, LAST_NAME, AGE, EMAIL) VALUES (1, 'Uladzimir', 'Tarasavets', 28, 'tarasovets21@gmail.com')
+2021-08-18 13:41:24 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:41:24 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:41:24 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:41:24 INFO  Log:25 - Send request to DB: SELECT * FROM students
+2021-08-18 13:41:24 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:41:24 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:41:25 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  28|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 13:41:25 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:41:25 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:41:25 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (1, 'AQA', 'MINSK')
+2021-08-18 13:41:25 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:41:25 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:41:25 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:41:25 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (2, 'JAVA SE', 'GRODNO')
+2021-08-18 13:41:25 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:41:25 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:41:25 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:41:25 INFO  Log:25 - Send request to DB: SELECT * FROM course
+2021-08-18 13:41:25 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:41:25 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:41:25 INFO  Log:25 - Request results:
++----+------+-----+
+|  ID|COURSE|CITY |
++----+------+-----+
+|   1|AQA   |MINSK|
++----+------+-----+
++----+-------+------+
+|  ID|COURSE |CITY  |
++----+-------+------+
+|   2|JAVA SE|GRODNO|
++----+-------+------+
+
+2021-08-18 13:41:25 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:41:25 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:41:25 INFO  Log:25 - Send request to DB: UPDATE students SET AGE = '29' WHERE ID='1'
+2021-08-18 13:41:25 INFO  Log:25 - Data in table was updated successfully
+2021-08-18 13:41:25 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:41:25 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:41:25 INFO  Log:25 - Send request to DB: SELECT AGE FROM students WHERE ID=1
+2021-08-18 13:41:25 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:41:25 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:41:25 INFO  Log:25 - Request results:
++----+
+| AGE|
++----+
+|  29|
++----+
+
+2021-08-18 13:41:25 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:41:25 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:41:25 INFO  Log:25 - Send request to DB: SELECT * FROM students WHERE LAST_NAME='Tarasavets'
+2021-08-18 13:41:25 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:41:25 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:41:25 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 13:41:25 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:41:25 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:41:25 INFO  Log:25 - Send request to DB: SELECT * FROM students INNER JOIN course ON course.id = students.id
+2021-08-18 13:41:25 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:41:25 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:41:25 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+----+------+-----+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |  ID|COURSE|CITY |
++----+----------+----------+----+----------------------+----+------+-----+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|   1|AQA   |MINSK|
++----+----------+----------+----+----------------------+----+------+-----+
+
+2021-08-18 13:41:25 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:41:25 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:41:25 INFO  Log:25 - Send request to DB: SELECT * FROM course FULL JOIN students ON course.ID = students.id
+2021-08-18 13:41:25 ERROR Log:46 - Unknown column 'course.ID' in 'on clause'
+2021-08-18 13:41:25 INFO  Log:25 - Send request to DB: DELETE FROM students WHERE ID=1
+2021-08-18 13:41:25 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:41:25 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:41:25 INFO  Log:25 - Data from table was deleted successfully
+2021-08-18 13:41:25 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:41:25 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:41:25 INFO  Log:25 - Send request to DB: DROP TABLE students
+2021-08-18 13:41:25 INFO  Log:25 - Table was deleted successfully
+2021-08-18 13:41:25 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:41:25 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:41:25 INFO  Log:25 - Send request to DB: DROP TABLE course
+2021-08-18 13:41:26 INFO  Log:25 - Table was deleted successfully
+2021-08-18 13:46:28 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:46:29 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:46:29 INFO  Log:25 - Send request to DB: CREATE TABLE students (ID int(3) NOT NULL,FIRST_NAME VARCHAR(21) NOT NULL,LAST_NAME VARCHAR(21) NOT NULL,AGE int(3),EMAIL VARCHAR(64) NOT NULL,PRIMARY KEY (id))
+2021-08-18 13:46:29 INFO  Log:25 - Table was created successfully
+2021-08-18 13:46:29 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:46:29 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:46:29 INFO  Log:25 - Send request to DB: CREATE TABLE course (ID int(2) NOT NULL,COURSE VARCHAR(45) NOT NULL,CITY VARCHAR(45) NOT NULL,PRIMARY KEY (id))
+2021-08-18 13:46:29 INFO  Log:25 - Table was created successfully
+2021-08-18 13:46:29 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:46:29 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:46:29 INFO  Log:25 - Send request to DB: INSERT INTO students (ID, FIRST_NAME, LAST_NAME, AGE, EMAIL) VALUES (1, 'Uladzimir', 'Tarasavets', 28, 'tarasovets21@gmail.com')
+2021-08-18 13:46:29 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:46:29 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:46:29 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:46:29 INFO  Log:25 - Send request to DB: SELECT * FROM students
+2021-08-18 13:46:29 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:46:29 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:46:31 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  28|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 13:46:31 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:46:31 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:46:31 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (1, 'AQA', 'MINSK')
+2021-08-18 13:46:31 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:46:31 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:46:31 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:46:31 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (2, 'JAVA SE', 'GRODNO')
+2021-08-18 13:46:31 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 13:46:31 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:46:31 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:46:31 INFO  Log:25 - Send request to DB: SELECT * FROM course
+2021-08-18 13:46:31 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:46:31 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:46:31 INFO  Log:25 - Request results:
++----+------+-----+
+|  ID|COURSE|CITY |
++----+------+-----+
+|   1|AQA   |MINSK|
++----+------+-----+
++----+-------+------+
+|  ID|COURSE |CITY  |
++----+-------+------+
+|   2|JAVA SE|GRODNO|
++----+-------+------+
+
+2021-08-18 13:46:31 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:46:31 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:46:31 INFO  Log:25 - Send request to DB: UPDATE students SET AGE = '29' WHERE ID='1'
+2021-08-18 13:46:31 INFO  Log:25 - Data in table was updated successfully
+2021-08-18 13:46:31 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:46:31 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:46:31 INFO  Log:25 - Send request to DB: SELECT AGE FROM students WHERE ID=1
+2021-08-18 13:46:31 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:46:31 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:46:31 INFO  Log:25 - Request results:
++----+
+| AGE|
++----+
+|  29|
++----+
+
+2021-08-18 13:46:31 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:46:31 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:46:31 INFO  Log:25 - Send request to DB: SELECT * FROM students WHERE LAST_NAME='Tarasavets'
+2021-08-18 13:46:31 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:46:31 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:46:31 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 13:46:31 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:46:31 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:46:31 INFO  Log:25 - Send request to DB: SELECT * FROM students INNER JOIN course ON course.id = students.id
+2021-08-18 13:46:31 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:46:31 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:46:31 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+----+------+-----+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |  ID|COURSE|CITY |
++----+----------+----------+----+----------------------+----+------+-----+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|   1|AQA   |MINSK|
++----+----------+----------+----+----------------------+----+------+-----+
+
+2021-08-18 13:46:31 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 13:46:31 INFO  Log:25 - Connection to DB successful!
+2021-08-18 13:46:31 INFO  Log:25 - Send request to DB: SELECT * FROM course FULL JOIN students ON course.id = students.id
+2021-08-18 13:46:31 ERROR Log:46 - Unknown column 'course.id' in 'on clause'
+2021-08-18 17:26:32 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:26:33 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:26:33 INFO  Log:25 - Send request to DB: CREATE TABLE students (ID int(3) NOT NULL,FIRST_NAME VARCHAR(21) NOT NULL,LAST_NAME VARCHAR(21) NOT NULL,AGE int(3),EMAIL VARCHAR(64) NOT NULL,PRIMARY KEY (id))
+2021-08-18 17:26:33 ERROR Log:46 - Table was not created. Reason:
+Table 'students' already exists
+2021-08-18 17:26:33 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:26:33 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:26:33 INFO  Log:25 - Send request to DB: CREATE TABLE course (ID int(2) NOT NULL,COURSE VARCHAR(45) NOT NULL,CITY VARCHAR(45) NOT NULL,PRIMARY KEY (id))
+2021-08-18 17:26:33 ERROR Log:46 - Table was not created. Reason:
+Table 'course' already exists
+2021-08-18 17:26:33 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:26:33 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:26:33 INFO  Log:25 - Send request to DB: INSERT INTO students (ID, FIRST_NAME, LAST_NAME, AGE, EMAIL) VALUES (1, 'Uladzimir', 'Tarasavets', 28, 'tarasovets21@gmail.com')
+2021-08-18 17:26:33 ERROR Log:46 - New data was not inserted into table. Reason:
+Duplicate entry '1' for key 'students.PRIMARY'
+2021-08-18 17:26:33 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:26:33 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:26:33 INFO  Log:25 - Send request to DB: SELECT * FROM students
+2021-08-18 17:26:33 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:26:33 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:26:34 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 17:26:34 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:26:34 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:26:34 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (1, 'AQA', 'MINSK')
+2021-08-18 17:26:34 ERROR Log:46 - New data was not inserted into table. Reason:
+Duplicate entry '1' for key 'course.PRIMARY'
+2021-08-18 17:26:34 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:26:34 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:26:34 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (2, 'JAVA SE', 'GRODNO')
+2021-08-18 17:26:34 ERROR Log:46 - New data was not inserted into table. Reason:
+Duplicate entry '2' for key 'course.PRIMARY'
+2021-08-18 17:26:34 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:26:34 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:26:34 INFO  Log:25 - Send request to DB: SELECT * FROM course
+2021-08-18 17:26:34 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:26:34 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:26:34 INFO  Log:25 - Request results:
++----+------+-----+
+|  ID|COURSE|CITY |
++----+------+-----+
+|   1|AQA   |MINSK|
++----+------+-----+
++----+-------+------+
+|  ID|COURSE |CITY  |
++----+-------+------+
+|   2|JAVA SE|GRODNO|
++----+-------+------+
+
+2021-08-18 17:26:34 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:26:34 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:26:34 INFO  Log:25 - Send request to DB: UPDATE students SET AGE = '29' WHERE ID='1'
+2021-08-18 17:26:34 INFO  Log:25 - Data in table was updated successfully
+2021-08-18 17:26:34 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:26:34 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:26:34 INFO  Log:25 - Send request to DB: SELECT AGE FROM students WHERE ID=1
+2021-08-18 17:26:34 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:26:34 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:26:34 INFO  Log:25 - Request results:
++----+
+| AGE|
++----+
+|  29|
++----+
+
+2021-08-18 17:26:34 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:26:34 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:26:34 INFO  Log:25 - Send request to DB: SELECT * FROM students WHERE LAST_NAME='Tarasavets'
+2021-08-18 17:26:34 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:26:35 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:26:35 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 17:26:35 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:26:35 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:26:35 INFO  Log:25 - Send request to DB: SELECT * FROM students INNER JOIN course ON course.id = students.id
+2021-08-18 17:26:35 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:26:35 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:26:35 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+----+------+-----+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |  ID|COURSE|CITY |
++----+----------+----------+----+----------------------+----+------+-----+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|   1|AQA   |MINSK|
++----+----------+----------+----+----------------------+----+------+-----+
+
+2021-08-18 17:26:35 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:26:35 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:26:35 INFO  Log:25 - Send request to DB: SELECT * FROM course c LEFT JOIN students s ON c.id = s.idUNIONSELECT * FROM course c RIGHT JOIN students s ON c.id = s.id
+2021-08-18 17:26:35 ERROR Log:46 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM course c RIGHT JOIN students s ON c.id = s.id' at line 1
+2021-08-18 17:26:41 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:26:42 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:26:42 INFO  Log:25 - Send request to DB: CREATE TABLE students (ID int(3) NOT NULL,FIRST_NAME VARCHAR(21) NOT NULL,LAST_NAME VARCHAR(21) NOT NULL,AGE int(3),EMAIL VARCHAR(64) NOT NULL,PRIMARY KEY (id))
+2021-08-18 17:26:42 ERROR Log:46 - Table was not created. Reason:
+Table 'students' already exists
+2021-08-18 17:26:42 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:26:42 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:26:42 INFO  Log:25 - Send request to DB: CREATE TABLE course (ID int(2) NOT NULL,COURSE VARCHAR(45) NOT NULL,CITY VARCHAR(45) NOT NULL,PRIMARY KEY (id))
+2021-08-18 17:26:42 ERROR Log:46 - Table was not created. Reason:
+Table 'course' already exists
+2021-08-18 17:26:42 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:26:42 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:26:42 INFO  Log:25 - Send request to DB: INSERT INTO students (ID, FIRST_NAME, LAST_NAME, AGE, EMAIL) VALUES (1, 'Uladzimir', 'Tarasavets', 28, 'tarasovets21@gmail.com')
+2021-08-18 17:26:42 ERROR Log:46 - New data was not inserted into table. Reason:
+Duplicate entry '1' for key 'students.PRIMARY'
+2021-08-18 17:26:42 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:26:42 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:26:42 INFO  Log:25 - Send request to DB: SELECT * FROM students
+2021-08-18 17:26:42 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:26:42 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:26:43 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 17:26:43 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:26:43 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:26:43 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (1, 'AQA', 'MINSK')
+2021-08-18 17:26:43 ERROR Log:46 - New data was not inserted into table. Reason:
+Duplicate entry '1' for key 'course.PRIMARY'
+2021-08-18 17:26:43 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:26:43 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:26:43 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (2, 'JAVA SE', 'GRODNO')
+2021-08-18 17:26:43 ERROR Log:46 - New data was not inserted into table. Reason:
+Duplicate entry '2' for key 'course.PRIMARY'
+2021-08-18 17:26:43 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:26:43 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:26:43 INFO  Log:25 - Send request to DB: SELECT * FROM course
+2021-08-18 17:26:43 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:26:43 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:26:43 INFO  Log:25 - Request results:
++----+------+-----+
+|  ID|COURSE|CITY |
++----+------+-----+
+|   1|AQA   |MINSK|
++----+------+-----+
++----+-------+------+
+|  ID|COURSE |CITY  |
++----+-------+------+
+|   2|JAVA SE|GRODNO|
++----+-------+------+
+
+2021-08-18 17:26:43 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:26:43 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:26:43 INFO  Log:25 - Send request to DB: UPDATE students SET AGE = '29' WHERE ID='1'
+2021-08-18 17:26:43 INFO  Log:25 - Data in table was updated successfully
+2021-08-18 17:26:43 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:26:43 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:26:43 INFO  Log:25 - Send request to DB: SELECT AGE FROM students WHERE ID=1
+2021-08-18 17:26:43 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:26:43 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:26:43 INFO  Log:25 - Request results:
++----+
+| AGE|
++----+
+|  29|
++----+
+
+2021-08-18 17:26:43 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:26:43 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:26:43 INFO  Log:25 - Send request to DB: SELECT * FROM students WHERE LAST_NAME='Tarasavets'
+2021-08-18 17:26:43 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:26:43 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:26:43 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 17:26:43 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:26:43 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:26:43 INFO  Log:25 - Send request to DB: SELECT * FROM students INNER JOIN course ON course.id = students.id
+2021-08-18 17:26:43 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:26:44 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:26:44 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+----+------+-----+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |  ID|COURSE|CITY |
++----+----------+----------+----+----------------------+----+------+-----+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|   1|AQA   |MINSK|
++----+----------+----------+----+----------------------+----+------+-----+
+
+2021-08-18 17:26:44 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:26:44 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:26:44 INFO  Log:25 - Send request to DB: SELECT * FROM course c LEFT JOIN students s ON c.id = s.idUNIONSELECT * FROM course c RIGHT JOIN students s ON c.id = s.id
+2021-08-18 17:26:44 ERROR Log:46 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM course c RIGHT JOIN students s ON c.id = s.id' at line 1
+2021-08-18 17:27:01 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:27:02 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:27:02 INFO  Log:25 - Send request to DB: CREATE TABLE students (ID int(3) NOT NULL,FIRST_NAME VARCHAR(21) NOT NULL,LAST_NAME VARCHAR(21) NOT NULL,AGE int(3),EMAIL VARCHAR(64) NOT NULL,PRIMARY KEY (id))
+2021-08-18 17:27:02 ERROR Log:46 - Table was not created. Reason:
+Table 'students' already exists
+2021-08-18 17:27:02 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:27:02 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:27:02 INFO  Log:25 - Send request to DB: CREATE TABLE course (ID int(2) NOT NULL,COURSE VARCHAR(45) NOT NULL,CITY VARCHAR(45) NOT NULL,PRIMARY KEY (id))
+2021-08-18 17:27:02 ERROR Log:46 - Table was not created. Reason:
+Table 'course' already exists
+2021-08-18 17:27:02 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:27:02 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:27:02 INFO  Log:25 - Send request to DB: INSERT INTO students (ID, FIRST_NAME, LAST_NAME, AGE, EMAIL) VALUES (1, 'Uladzimir', 'Tarasavets', 28, 'tarasovets21@gmail.com')
+2021-08-18 17:27:02 ERROR Log:46 - New data was not inserted into table. Reason:
+Duplicate entry '1' for key 'students.PRIMARY'
+2021-08-18 17:27:02 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:27:02 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:27:02 INFO  Log:25 - Send request to DB: SELECT * FROM students
+2021-08-18 17:27:02 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:27:02 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:27:03 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 17:27:03 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:27:03 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:27:03 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (1, 'AQA', 'MINSK')
+2021-08-18 17:27:03 ERROR Log:46 - New data was not inserted into table. Reason:
+Duplicate entry '1' for key 'course.PRIMARY'
+2021-08-18 17:27:03 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:27:03 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:27:03 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (2, 'JAVA SE', 'GRODNO')
+2021-08-18 17:27:03 ERROR Log:46 - New data was not inserted into table. Reason:
+Duplicate entry '2' for key 'course.PRIMARY'
+2021-08-18 17:27:03 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:27:03 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:27:03 INFO  Log:25 - Send request to DB: SELECT * FROM course
+2021-08-18 17:27:03 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:27:03 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:27:03 INFO  Log:25 - Request results:
++----+------+-----+
+|  ID|COURSE|CITY |
++----+------+-----+
+|   1|AQA   |MINSK|
++----+------+-----+
++----+-------+------+
+|  ID|COURSE |CITY  |
++----+-------+------+
+|   2|JAVA SE|GRODNO|
++----+-------+------+
+
+2021-08-18 17:27:03 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:27:03 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:27:03 INFO  Log:25 - Send request to DB: UPDATE students SET AGE = '29' WHERE ID='1'
+2021-08-18 17:27:03 INFO  Log:25 - Data in table was updated successfully
+2021-08-18 17:27:03 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:27:03 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:27:03 INFO  Log:25 - Send request to DB: SELECT AGE FROM students WHERE ID=1
+2021-08-18 17:27:03 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:27:03 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:27:03 INFO  Log:25 - Request results:
++----+
+| AGE|
++----+
+|  29|
++----+
+
+2021-08-18 17:27:03 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:27:03 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:27:03 INFO  Log:25 - Send request to DB: SELECT * FROM students WHERE LAST_NAME='Tarasavets'
+2021-08-18 17:27:03 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:27:03 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:27:03 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 17:27:03 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:27:03 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:27:03 INFO  Log:25 - Send request to DB: SELECT * FROM students INNER JOIN course ON course.id = students.id
+2021-08-18 17:27:03 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:27:03 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:27:03 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+----+------+-----+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |  ID|COURSE|CITY |
++----+----------+----------+----+----------------------+----+------+-----+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|   1|AQA   |MINSK|
++----+----------+----------+----+----------------------+----+------+-----+
+
+2021-08-18 17:27:03 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:27:03 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:27:03 INFO  Log:25 - Send request to DB: SELECT * FROM course c LEFT JOIN students s ON c.id = s.idUNIONSELECT * FROM course c RIGHT JOIN students s ON c.id = s.id
+2021-08-18 17:27:03 ERROR Log:46 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM course c RIGHT JOIN students s ON c.id = s.id' at line 1
+2021-08-18 17:28:08 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:28:09 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:28:09 INFO  Log:25 - Send request to DB: CREATE TABLE students (ID int(3) NOT NULL,FIRST_NAME VARCHAR(21) NOT NULL,LAST_NAME VARCHAR(21) NOT NULL,AGE int(3),EMAIL VARCHAR(64) NOT NULL,PRIMARY KEY (id))
+2021-08-18 17:28:09 INFO  Log:25 - Table was created successfully
+2021-08-18 17:28:09 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:28:09 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:28:09 INFO  Log:25 - Send request to DB: CREATE TABLE course (ID int(2) NOT NULL,COURSE VARCHAR(45) NOT NULL,CITY VARCHAR(45) NOT NULL,PRIMARY KEY (id))
+2021-08-18 17:28:09 INFO  Log:25 - Table was created successfully
+2021-08-18 17:28:09 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:28:09 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:28:09 INFO  Log:25 - Send request to DB: INSERT INTO students (ID, FIRST_NAME, LAST_NAME, AGE, EMAIL) VALUES (1, 'Uladzimir', 'Tarasavets', 28, 'tarasovets21@gmail.com')
+2021-08-18 17:28:09 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 17:28:09 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:28:10 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:28:10 INFO  Log:25 - Send request to DB: SELECT * FROM students
+2021-08-18 17:28:10 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:28:10 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:28:11 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  28|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 17:28:11 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:28:11 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:28:11 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (1, 'AQA', 'MINSK')
+2021-08-18 17:28:11 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 17:28:11 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:28:11 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:28:11 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (2, 'JAVA SE', 'GRODNO')
+2021-08-18 17:28:11 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 17:28:11 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:28:11 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:28:11 INFO  Log:25 - Send request to DB: SELECT * FROM course
+2021-08-18 17:28:11 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:28:11 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:28:11 INFO  Log:25 - Request results:
++----+------+-----+
+|  ID|COURSE|CITY |
++----+------+-----+
+|   1|AQA   |MINSK|
++----+------+-----+
++----+-------+------+
+|  ID|COURSE |CITY  |
++----+-------+------+
+|   2|JAVA SE|GRODNO|
++----+-------+------+
+
+2021-08-18 17:28:11 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:28:11 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:28:11 INFO  Log:25 - Send request to DB: UPDATE students SET AGE = '29' WHERE ID='1'
+2021-08-18 17:28:11 INFO  Log:25 - Data in table was updated successfully
+2021-08-18 17:28:11 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:28:11 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:28:11 INFO  Log:25 - Send request to DB: SELECT AGE FROM students WHERE ID=1
+2021-08-18 17:28:11 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:28:11 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:28:11 INFO  Log:25 - Request results:
++----+
+| AGE|
++----+
+|  29|
++----+
+
+2021-08-18 17:28:11 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:28:11 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:28:11 INFO  Log:25 - Send request to DB: SELECT * FROM students WHERE LAST_NAME='Tarasavets'
+2021-08-18 17:28:11 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:28:11 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:28:11 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 17:28:11 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:28:11 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:28:11 INFO  Log:25 - Send request to DB: SELECT * FROM students INNER JOIN course ON course.id = students.id
+2021-08-18 17:28:11 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:28:11 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:28:11 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+----+------+-----+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |  ID|COURSE|CITY |
++----+----------+----------+----+----------------------+----+------+-----+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|   1|AQA   |MINSK|
++----+----------+----------+----+----------------------+----+------+-----+
+
+2021-08-18 17:28:11 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:28:11 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:28:11 INFO  Log:25 - Send request to DB: SELECT * FROM course c LEFT JOIN students s ON c.id = s.idUNIONSELECT * FROM course c RIGHT JOIN students s ON c.id = s.id
+2021-08-18 17:28:11 ERROR Log:46 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM course c RIGHT JOIN students s ON c.id = s.id' at line 1
+2021-08-18 17:29:18 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:19 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:19 INFO  Log:25 - Send request to DB: CREATE TABLE students (ID int(3) NOT NULL,FIRST_NAME VARCHAR(21) NOT NULL,LAST_NAME VARCHAR(21) NOT NULL,AGE int(3),EMAIL VARCHAR(64) NOT NULL,PRIMARY KEY (id))
+2021-08-18 17:29:19 ERROR Log:46 - Table was not created. Reason:
+Table 'students' already exists
+2021-08-18 17:29:19 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:19 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:19 INFO  Log:25 - Send request to DB: CREATE TABLE course (ID int(2) NOT NULL,COURSE VARCHAR(45) NOT NULL,CITY VARCHAR(45) NOT NULL,PRIMARY KEY (id))
+2021-08-18 17:29:19 ERROR Log:46 - Table was not created. Reason:
+Table 'course' already exists
+2021-08-18 17:29:19 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:19 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:19 INFO  Log:25 - Send request to DB: INSERT INTO students (ID, FIRST_NAME, LAST_NAME, AGE, EMAIL) VALUES (1, 'Uladzimir', 'Tarasavets', 28, 'tarasovets21@gmail.com')
+2021-08-18 17:29:19 ERROR Log:46 - New data was not inserted into table. Reason:
+Duplicate entry '1' for key 'students.PRIMARY'
+2021-08-18 17:29:19 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:19 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:19 INFO  Log:25 - Send request to DB: SELECT * FROM students
+2021-08-18 17:29:19 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:19 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:20 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 17:29:20 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:20 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:20 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (1, 'AQA', 'MINSK')
+2021-08-18 17:29:20 ERROR Log:46 - New data was not inserted into table. Reason:
+Duplicate entry '1' for key 'course.PRIMARY'
+2021-08-18 17:29:20 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:20 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:20 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (2, 'JAVA SE', 'GRODNO')
+2021-08-18 17:29:20 ERROR Log:46 - New data was not inserted into table. Reason:
+Duplicate entry '2' for key 'course.PRIMARY'
+2021-08-18 17:29:20 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:20 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:20 INFO  Log:25 - Send request to DB: SELECT * FROM course
+2021-08-18 17:29:20 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:20 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:20 INFO  Log:25 - Request results:
++----+------+-----+
+|  ID|COURSE|CITY |
++----+------+-----+
+|   1|AQA   |MINSK|
++----+------+-----+
++----+-------+------+
+|  ID|COURSE |CITY  |
++----+-------+------+
+|   2|JAVA SE|GRODNO|
++----+-------+------+
+
+2021-08-18 17:29:20 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:20 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:20 INFO  Log:25 - Send request to DB: UPDATE students SET AGE = '29' WHERE ID='1'
+2021-08-18 17:29:20 INFO  Log:25 - Data in table was updated successfully
+2021-08-18 17:29:20 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:20 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:20 INFO  Log:25 - Send request to DB: SELECT AGE FROM students WHERE ID=1
+2021-08-18 17:29:20 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:21 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:21 INFO  Log:25 - Request results:
++----+
+| AGE|
++----+
+|  29|
++----+
+
+2021-08-18 17:29:21 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:21 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:21 INFO  Log:25 - Send request to DB: SELECT * FROM students WHERE LAST_NAME='Tarasavets'
+2021-08-18 17:29:21 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:21 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:21 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 17:29:21 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:21 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:21 INFO  Log:25 - Send request to DB: SELECT * FROM students INNER JOIN course ON course.id = students.id
+2021-08-18 17:29:21 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:21 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:21 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+----+------+-----+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |  ID|COURSE|CITY |
++----+----------+----------+----+----------------------+----+------+-----+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|   1|AQA   |MINSK|
++----+----------+----------+----+----------------------+----+------+-----+
+
+2021-08-18 17:29:21 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:21 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:21 INFO  Log:25 - Send request to DB: SELECT * FROM course LEFT JOIN students ON course.id = students.idUNIONSELECT * FROM course RIGHT JOIN students ON course.id = students.id
+2021-08-18 17:29:21 ERROR Log:46 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM course RIGHT JOIN students ON course.id = students.id' at line 1
+2021-08-18 17:29:36 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:37 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:37 INFO  Log:25 - Send request to DB: CREATE TABLE students (ID int(3) NOT NULL,FIRST_NAME VARCHAR(21) NOT NULL,LAST_NAME VARCHAR(21) NOT NULL,AGE int(3),EMAIL VARCHAR(64) NOT NULL,PRIMARY KEY (id))
+2021-08-18 17:29:37 ERROR Log:46 - Table was not created. Reason:
+Table 'students' already exists
+2021-08-18 17:29:37 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:37 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:37 INFO  Log:25 - Send request to DB: CREATE TABLE course (ID int(2) NOT NULL,COURSE VARCHAR(45) NOT NULL,CITY VARCHAR(45) NOT NULL,PRIMARY KEY (id))
+2021-08-18 17:29:37 ERROR Log:46 - Table was not created. Reason:
+Table 'course' already exists
+2021-08-18 17:29:37 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:37 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:37 INFO  Log:25 - Send request to DB: INSERT INTO students (ID, FIRST_NAME, LAST_NAME, AGE, EMAIL) VALUES (1, 'Uladzimir', 'Tarasavets', 28, 'tarasovets21@gmail.com')
+2021-08-18 17:29:37 ERROR Log:46 - New data was not inserted into table. Reason:
+Duplicate entry '1' for key 'students.PRIMARY'
+2021-08-18 17:29:37 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:37 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:37 INFO  Log:25 - Send request to DB: SELECT * FROM students
+2021-08-18 17:29:37 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:37 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:38 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 17:29:38 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:38 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:38 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (1, 'AQA', 'MINSK')
+2021-08-18 17:29:38 ERROR Log:46 - New data was not inserted into table. Reason:
+Duplicate entry '1' for key 'course.PRIMARY'
+2021-08-18 17:29:38 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:38 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:38 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (2, 'JAVA SE', 'GRODNO')
+2021-08-18 17:29:38 ERROR Log:46 - New data was not inserted into table. Reason:
+Duplicate entry '2' for key 'course.PRIMARY'
+2021-08-18 17:29:38 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:38 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:38 INFO  Log:25 - Send request to DB: SELECT * FROM course
+2021-08-18 17:29:38 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:38 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:38 INFO  Log:25 - Request results:
++----+------+-----+
+|  ID|COURSE|CITY |
++----+------+-----+
+|   1|AQA   |MINSK|
++----+------+-----+
++----+-------+------+
+|  ID|COURSE |CITY  |
++----+-------+------+
+|   2|JAVA SE|GRODNO|
++----+-------+------+
+
+2021-08-18 17:29:38 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:38 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:38 INFO  Log:25 - Send request to DB: UPDATE students SET AGE = '29' WHERE ID='1'
+2021-08-18 17:29:38 INFO  Log:25 - Data in table was updated successfully
+2021-08-18 17:29:38 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:38 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:38 INFO  Log:25 - Send request to DB: SELECT AGE FROM students WHERE ID=1
+2021-08-18 17:29:38 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:38 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:38 INFO  Log:25 - Request results:
++----+
+| AGE|
++----+
+|  29|
++----+
+
+2021-08-18 17:29:38 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:38 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:38 INFO  Log:25 - Send request to DB: SELECT * FROM students WHERE LAST_NAME='Tarasavets'
+2021-08-18 17:29:38 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:38 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:38 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 17:29:38 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:38 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:38 INFO  Log:25 - Send request to DB: SELECT * FROM students INNER JOIN course ON course.id = students.id
+2021-08-18 17:29:38 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:38 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:38 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+----+------+-----+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |  ID|COURSE|CITY |
++----+----------+----------+----+----------------------+----+------+-----+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|   1|AQA   |MINSK|
++----+----------+----------+----+----------------------+----+------+-----+
+
+2021-08-18 17:29:38 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:38 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:38 INFO  Log:25 - Send request to DB: SELECT * FROM course LEFT JOIN students ON course.id = students.idUNIONSELECT * FROM course RIGHT JOIN students ON course.id = students.id
+2021-08-18 17:29:38 ERROR Log:46 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM course RIGHT JOIN students ON course.id = students.id' at line 1
+2021-08-18 17:29:38 INFO  Log:25 - Send request to DB: DELETE FROM students WHERE ID=1
+2021-08-18 17:29:38 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:38 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:38 INFO  Log:25 - Data from table was deleted successfully
+2021-08-18 17:29:38 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:38 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:38 INFO  Log:25 - Send request to DB: DROP TABLE students
+2021-08-18 17:29:38 INFO  Log:25 - Table was deleted successfully
+2021-08-18 17:29:38 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:38 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:38 INFO  Log:25 - Send request to DB: DROP TABLE course
+2021-08-18 17:29:38 INFO  Log:25 - Table was deleted successfully
+2021-08-18 17:29:47 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:47 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:47 INFO  Log:25 - Send request to DB: CREATE TABLE students (ID int(3) NOT NULL,FIRST_NAME VARCHAR(21) NOT NULL,LAST_NAME VARCHAR(21) NOT NULL,AGE int(3),EMAIL VARCHAR(64) NOT NULL,PRIMARY KEY (id))
+2021-08-18 17:29:48 INFO  Log:25 - Table was created successfully
+2021-08-18 17:29:48 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:48 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:48 INFO  Log:25 - Send request to DB: CREATE TABLE course (ID int(2) NOT NULL,COURSE VARCHAR(45) NOT NULL,CITY VARCHAR(45) NOT NULL,PRIMARY KEY (id))
+2021-08-18 17:29:48 INFO  Log:25 - Table was created successfully
+2021-08-18 17:29:48 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:48 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:48 INFO  Log:25 - Send request to DB: INSERT INTO students (ID, FIRST_NAME, LAST_NAME, AGE, EMAIL) VALUES (1, 'Uladzimir', 'Tarasavets', 28, 'tarasovets21@gmail.com')
+2021-08-18 17:29:48 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 17:29:48 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:48 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:48 INFO  Log:25 - Send request to DB: SELECT * FROM students
+2021-08-18 17:29:48 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:48 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:49 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  28|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 17:29:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:49 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (1, 'AQA', 'MINSK')
+2021-08-18 17:29:49 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 17:29:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:49 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (2, 'JAVA SE', 'GRODNO')
+2021-08-18 17:29:49 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 17:29:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:49 INFO  Log:25 - Send request to DB: SELECT * FROM course
+2021-08-18 17:29:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:49 INFO  Log:25 - Request results:
++----+------+-----+
+|  ID|COURSE|CITY |
++----+------+-----+
+|   1|AQA   |MINSK|
++----+------+-----+
++----+-------+------+
+|  ID|COURSE |CITY  |
++----+-------+------+
+|   2|JAVA SE|GRODNO|
++----+-------+------+
+
+2021-08-18 17:29:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:49 INFO  Log:25 - Send request to DB: UPDATE students SET AGE = '29' WHERE ID='1'
+2021-08-18 17:29:49 INFO  Log:25 - Data in table was updated successfully
+2021-08-18 17:29:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:49 INFO  Log:25 - Send request to DB: SELECT AGE FROM students WHERE ID=1
+2021-08-18 17:29:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:49 INFO  Log:25 - Request results:
++----+
+| AGE|
++----+
+|  29|
++----+
+
+2021-08-18 17:29:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:49 INFO  Log:25 - Send request to DB: SELECT * FROM students WHERE LAST_NAME='Tarasavets'
+2021-08-18 17:29:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:49 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 17:29:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:49 INFO  Log:25 - Send request to DB: SELECT * FROM students INNER JOIN course ON course.id = students.id
+2021-08-18 17:29:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:49 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+----+------+-----+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |  ID|COURSE|CITY |
++----+----------+----------+----+----------------------+----+------+-----+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|   1|AQA   |MINSK|
++----+----------+----------+----+----------------------+----+------+-----+
+
+2021-08-18 17:29:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:49 INFO  Log:25 - Send request to DB: SELECT * FROM course LEFT JOIN students ON course.id = students.idUNIONSELECT * FROM course RIGHT JOIN students ON course.id = students.id
+2021-08-18 17:29:49 ERROR Log:46 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM course RIGHT JOIN students ON course.id = students.id' at line 1
+2021-08-18 17:29:49 INFO  Log:25 - Send request to DB: DELETE FROM students WHERE ID=1
+2021-08-18 17:29:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:50 INFO  Log:25 - Data from table was deleted successfully
+2021-08-18 17:29:50 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:50 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:50 INFO  Log:25 - Send request to DB: DROP TABLE students
+2021-08-18 17:29:50 INFO  Log:25 - Table was deleted successfully
+2021-08-18 17:29:50 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:29:50 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:29:50 INFO  Log:25 - Send request to DB: DROP TABLE course
+2021-08-18 17:29:50 INFO  Log:25 - Table was deleted successfully
+2021-08-18 17:30:36 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:30:38 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:30:38 INFO  Log:25 - Send request to DB: CREATE TABLE students (ID int(3) NOT NULL,FIRST_NAME VARCHAR(21) NOT NULL,LAST_NAME VARCHAR(21) NOT NULL,AGE int(3),EMAIL VARCHAR(64) NOT NULL,PRIMARY KEY (id))
+2021-08-18 17:30:38 INFO  Log:25 - Table was created successfully
+2021-08-18 17:30:38 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:30:38 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:30:38 INFO  Log:25 - Send request to DB: CREATE TABLE course (ID int(2) NOT NULL,COURSE VARCHAR(45) NOT NULL,CITY VARCHAR(45) NOT NULL,PRIMARY KEY (id))
+2021-08-18 17:30:38 INFO  Log:25 - Table was created successfully
+2021-08-18 17:30:38 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:30:38 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:30:38 INFO  Log:25 - Send request to DB: INSERT INTO students (ID, FIRST_NAME, LAST_NAME, AGE, EMAIL) VALUES (1, 'Uladzimir', 'Tarasavets', 28, 'tarasovets21@gmail.com')
+2021-08-18 17:30:38 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 17:30:38 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:30:38 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:30:38 INFO  Log:25 - Send request to DB: SELECT * FROM students
+2021-08-18 17:30:38 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:30:38 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:30:40 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  28|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 17:30:40 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:30:40 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:30:40 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (1, 'AQA', 'MINSK')
+2021-08-18 17:30:40 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 17:30:40 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:30:40 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:30:40 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (2, 'JAVA SE', 'GRODNO')
+2021-08-18 17:30:40 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 17:30:40 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:30:40 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:30:40 INFO  Log:25 - Send request to DB: SELECT * FROM course
+2021-08-18 17:30:40 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:30:40 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:30:40 INFO  Log:25 - Request results:
++----+------+-----+
+|  ID|COURSE|CITY |
++----+------+-----+
+|   1|AQA   |MINSK|
++----+------+-----+
++----+-------+------+
+|  ID|COURSE |CITY  |
++----+-------+------+
+|   2|JAVA SE|GRODNO|
++----+-------+------+
+
+2021-08-18 17:30:40 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:30:40 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:30:40 INFO  Log:25 - Send request to DB: UPDATE students SET AGE = '29' WHERE ID='1'
+2021-08-18 17:30:40 INFO  Log:25 - Data in table was updated successfully
+2021-08-18 17:30:40 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:30:40 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:30:40 INFO  Log:25 - Send request to DB: SELECT AGE FROM students WHERE ID=1
+2021-08-18 17:30:40 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:30:40 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:30:40 INFO  Log:25 - Request results:
++----+
+| AGE|
++----+
+|  29|
++----+
+
+2021-08-18 17:30:40 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:30:40 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:30:40 INFO  Log:25 - Send request to DB: SELECT * FROM students WHERE LAST_NAME='Tarasavets'
+2021-08-18 17:30:40 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:30:40 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:30:40 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 17:30:40 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:30:40 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:30:40 INFO  Log:25 - Send request to DB: SELECT * FROM students INNER JOIN course ON course.id = students.id
+2021-08-18 17:30:40 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:30:41 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:30:41 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+----+------+-----+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |  ID|COURSE|CITY |
++----+----------+----------+----+----------------------+----+------+-----+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|   1|AQA   |MINSK|
++----+----------+----------+----+----------------------+----+------+-----+
+
+2021-08-18 17:33:43 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:46 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:46 INFO  Log:25 - Send request to DB: CREATE TABLE students (ID int(3) NOT NULL,FIRST_NAME VARCHAR(21) NOT NULL,LAST_NAME VARCHAR(21) NOT NULL,AGE int(3),EMAIL VARCHAR(64) NOT NULL,PRIMARY KEY (id))
+2021-08-18 17:33:46 ERROR Log:46 - Table was not created. Reason:
+Table 'students' already exists
+2021-08-18 17:33:46 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:46 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:46 INFO  Log:25 - Send request to DB: CREATE TABLE course (ID int(2) NOT NULL,COURSE VARCHAR(45) NOT NULL,CITY VARCHAR(45) NOT NULL,PRIMARY KEY (id))
+2021-08-18 17:33:46 ERROR Log:46 - Table was not created. Reason:
+Table 'course' already exists
+2021-08-18 17:33:46 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:46 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:46 INFO  Log:25 - Send request to DB: INSERT INTO students (ID, FIRST_NAME, LAST_NAME, AGE, EMAIL) VALUES (1, 'Uladzimir', 'Tarasavets', 28, 'tarasovets21@gmail.com')
+2021-08-18 17:33:46 ERROR Log:46 - New data was not inserted into table. Reason:
+Duplicate entry '1' for key 'students.PRIMARY'
+2021-08-18 17:33:46 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:46 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:46 INFO  Log:25 - Send request to DB: SELECT * FROM students
+2021-08-18 17:33:46 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:46 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:49 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 17:33:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:49 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (1, 'AQA', 'MINSK')
+2021-08-18 17:33:49 ERROR Log:46 - New data was not inserted into table. Reason:
+Duplicate entry '1' for key 'course.PRIMARY'
+2021-08-18 17:33:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:49 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (2, 'JAVA SE', 'GRODNO')
+2021-08-18 17:33:49 ERROR Log:46 - New data was not inserted into table. Reason:
+Duplicate entry '2' for key 'course.PRIMARY'
+2021-08-18 17:33:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:49 INFO  Log:25 - Send request to DB: SELECT * FROM course
+2021-08-18 17:33:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:49 INFO  Log:25 - Request results:
++----+------+-----+
+|  ID|COURSE|CITY |
++----+------+-----+
+|   1|AQA   |MINSK|
++----+------+-----+
++----+-------+------+
+|  ID|COURSE |CITY  |
++----+-------+------+
+|   2|JAVA SE|GRODNO|
++----+-------+------+
+
+2021-08-18 17:33:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:49 INFO  Log:25 - Send request to DB: UPDATE students SET AGE = '29' WHERE ID='1'
+2021-08-18 17:33:49 INFO  Log:25 - Data in table was updated successfully
+2021-08-18 17:33:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:49 INFO  Log:25 - Send request to DB: SELECT AGE FROM students WHERE ID=1
+2021-08-18 17:33:49 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:49 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:50 INFO  Log:25 - Request results:
++----+
+| AGE|
++----+
+|  29|
++----+
+
+2021-08-18 17:33:50 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:50 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:50 INFO  Log:25 - Send request to DB: SELECT * FROM students WHERE LAST_NAME='Tarasavets'
+2021-08-18 17:33:50 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:50 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:50 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 17:33:50 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:50 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:50 INFO  Log:25 - Send request to DB: SELECT * FROM students INNER JOIN course ON course.id = students.id
+2021-08-18 17:33:50 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:50 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:50 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+----+------+-----+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |  ID|COURSE|CITY |
++----+----------+----------+----+----------------------+----+------+-----+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|   1|AQA   |MINSK|
++----+----------+----------+----+----------------------+----+------+-----+
+
+2021-08-18 17:33:50 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:50 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:50 INFO  Log:25 - Send request to DB: SELECT * FROM course LEFT JOIN students ON course.id = students.id UNION SELECT * FROM course RIGHT JOIN students ON course.id = students.id
+2021-08-18 17:33:50 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:50 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:50 INFO  Log:25 - Request results:
++----+------+-----+----+----------+----------+----+----------------------+
+|  ID|COURSE|CITY |  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+------+-----+----+----------+----------+----+----------------------+
+|   1|AQA   |MINSK|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|
++----+------+-----+----+----------+----------+----+----------------------+
++----+-------+------+------+----------+---------+------+------+
+|  ID|COURSE |CITY  |    ID|FIRST_NAME|LAST_NAME|   AGE|EMAIL |
++----+-------+------+------+----------+---------+------+------+
+|   2|JAVA SE|GRODNO|{null}|{null}    |{null}   |{null}|{null}|
++----+-------+------+------+----------+---------+------+------+
+
+2021-08-18 17:33:50 INFO  Log:25 - Send request to DB: DELETE FROM students WHERE ID=1
+2021-08-18 17:33:50 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:50 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:50 INFO  Log:25 - Data from table was deleted successfully
+2021-08-18 17:33:50 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:50 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:50 INFO  Log:25 - Send request to DB: DROP TABLE students
+2021-08-18 17:33:50 INFO  Log:25 - Table was deleted successfully
+2021-08-18 17:33:50 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:50 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:50 INFO  Log:25 - Send request to DB: DROP TABLE course
+2021-08-18 17:33:51 INFO  Log:25 - Table was deleted successfully
+2021-08-18 17:33:56 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:57 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:57 INFO  Log:25 - Send request to DB: CREATE TABLE students (ID int(3) NOT NULL,FIRST_NAME VARCHAR(21) NOT NULL,LAST_NAME VARCHAR(21) NOT NULL,AGE int(3),EMAIL VARCHAR(64) NOT NULL,PRIMARY KEY (id))
+2021-08-18 17:33:57 INFO  Log:25 - Table was created successfully
+2021-08-18 17:33:57 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:57 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:57 INFO  Log:25 - Send request to DB: CREATE TABLE course (ID int(2) NOT NULL,COURSE VARCHAR(45) NOT NULL,CITY VARCHAR(45) NOT NULL,PRIMARY KEY (id))
+2021-08-18 17:33:57 INFO  Log:25 - Table was created successfully
+2021-08-18 17:33:57 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:57 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:57 INFO  Log:25 - Send request to DB: INSERT INTO students (ID, FIRST_NAME, LAST_NAME, AGE, EMAIL) VALUES (1, 'Uladzimir', 'Tarasavets', 28, 'tarasovets21@gmail.com')
+2021-08-18 17:33:57 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 17:33:57 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:57 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:57 INFO  Log:25 - Send request to DB: SELECT * FROM students
+2021-08-18 17:33:57 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:57 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:58 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  28|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 17:33:59 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:59 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:59 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (1, 'AQA', 'MINSK')
+2021-08-18 17:33:59 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 17:33:59 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:59 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:59 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (2, 'JAVA SE', 'GRODNO')
+2021-08-18 17:33:59 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 17:33:59 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:59 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:59 INFO  Log:25 - Send request to DB: SELECT * FROM course
+2021-08-18 17:33:59 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:59 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:59 INFO  Log:25 - Request results:
++----+------+-----+
+|  ID|COURSE|CITY |
++----+------+-----+
+|   1|AQA   |MINSK|
++----+------+-----+
++----+-------+------+
+|  ID|COURSE |CITY  |
++----+-------+------+
+|   2|JAVA SE|GRODNO|
++----+-------+------+
+
+2021-08-18 17:33:59 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:59 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:59 INFO  Log:25 - Send request to DB: UPDATE students SET AGE = '29' WHERE ID='1'
+2021-08-18 17:33:59 INFO  Log:25 - Data in table was updated successfully
+2021-08-18 17:33:59 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:59 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:59 INFO  Log:25 - Send request to DB: SELECT AGE FROM students WHERE ID=1
+2021-08-18 17:33:59 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:59 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:59 INFO  Log:25 - Request results:
++----+
+| AGE|
++----+
+|  29|
++----+
+
+2021-08-18 17:33:59 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:59 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:59 INFO  Log:25 - Send request to DB: SELECT * FROM students WHERE LAST_NAME='Tarasavets'
+2021-08-18 17:33:59 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:59 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:59 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 17:33:59 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:59 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:59 INFO  Log:25 - Send request to DB: SELECT * FROM students INNER JOIN course ON course.id = students.id
+2021-08-18 17:33:59 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:59 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:59 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+----+------+-----+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |  ID|COURSE|CITY |
++----+----------+----------+----+----------------------+----+------+-----+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|   1|AQA   |MINSK|
++----+----------+----------+----+----------------------+----+------+-----+
+
+2021-08-18 17:33:59 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:59 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:59 INFO  Log:25 - Send request to DB: SELECT * FROM course LEFT JOIN students ON course.id = students.id UNION SELECT * FROM course RIGHT JOIN students ON course.id = students.id
+2021-08-18 17:33:59 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:59 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:59 INFO  Log:25 - Request results:
++----+------+-----+----+----------+----------+----+----------------------+
+|  ID|COURSE|CITY |  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+------+-----+----+----------+----------+----+----------------------+
+|   1|AQA   |MINSK|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|
++----+------+-----+----+----------+----------+----+----------------------+
++----+-------+------+------+----------+---------+------+------+
+|  ID|COURSE |CITY  |    ID|FIRST_NAME|LAST_NAME|   AGE|EMAIL |
++----+-------+------+------+----------+---------+------+------+
+|   2|JAVA SE|GRODNO|{null}|{null}    |{null}   |{null}|{null}|
++----+-------+------+------+----------+---------+------+------+
+
+2021-08-18 17:33:59 INFO  Log:25 - Send request to DB: DELETE FROM students WHERE ID=1
+2021-08-18 17:33:59 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:59 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:59 INFO  Log:25 - Data from table was deleted successfully
+2021-08-18 17:33:59 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:59 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:59 INFO  Log:25 - Send request to DB: DROP TABLE students
+2021-08-18 17:33:59 INFO  Log:25 - Table was deleted successfully
+2021-08-18 17:33:59 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:33:59 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:33:59 INFO  Log:25 - Send request to DB: DROP TABLE course
+2021-08-18 17:34:00 INFO  Log:25 - Table was deleted successfully
+2021-08-18 17:34:28 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:34:29 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:34:29 INFO  Log:25 - Send request to DB: CREATE TABLE students (ID int(3) NOT NULL,FIRST_NAME VARCHAR(21) NOT NULL,LAST_NAME VARCHAR(21) NOT NULL,AGE int(3),EMAIL VARCHAR(64) NOT NULL,PRIMARY KEY (id))
+2021-08-18 17:34:29 INFO  Log:25 - Table was created successfully
+2021-08-18 17:34:29 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:34:29 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:34:29 INFO  Log:25 - Send request to DB: CREATE TABLE course (ID int(2) NOT NULL,COURSE VARCHAR(45) NOT NULL,CITY VARCHAR(45) NOT NULL,PRIMARY KEY (id))
+2021-08-18 17:34:29 INFO  Log:25 - Table was created successfully
+2021-08-18 17:34:29 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:34:29 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:34:29 INFO  Log:25 - Send request to DB: INSERT INTO students (ID, FIRST_NAME, LAST_NAME, AGE, EMAIL) VALUES (1, 'Uladzimir', 'Tarasavets', 28, 'tarasovets21@gmail.com')
+2021-08-18 17:34:29 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 17:34:29 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:34:29 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:34:29 INFO  Log:25 - Send request to DB: SELECT * FROM students
+2021-08-18 17:34:29 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:34:29 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:34:30 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  28|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 17:34:30 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:34:30 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:34:30 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (1, 'AQA', 'MINSK')
+2021-08-18 17:34:31 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 17:34:31 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:34:31 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:34:31 INFO  Log:25 - Send request to DB: INSERT INTO course (ID, COURSE, CITY) VALUES (2, 'JAVA SE', 'GRODNO')
+2021-08-18 17:34:31 INFO  Log:25 - New data was inserted into table successfully
+2021-08-18 17:34:31 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:34:31 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:34:31 INFO  Log:25 - Send request to DB: SELECT * FROM course
+2021-08-18 17:34:31 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:34:31 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:34:31 INFO  Log:25 - Request results:
++----+------+-----+
+|  ID|COURSE|CITY |
++----+------+-----+
+|   1|AQA   |MINSK|
++----+------+-----+
++----+-------+------+
+|  ID|COURSE |CITY  |
++----+-------+------+
+|   2|JAVA SE|GRODNO|
++----+-------+------+
+
+2021-08-18 17:34:31 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:34:31 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:34:31 INFO  Log:25 - Send request to DB: UPDATE students SET AGE = '29' WHERE ID='1'
+2021-08-18 17:34:31 INFO  Log:25 - Data in table was updated successfully
+2021-08-18 17:34:31 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:34:31 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:34:31 INFO  Log:25 - Send request to DB: SELECT AGE FROM students WHERE ID=1
+2021-08-18 17:34:31 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:34:31 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:34:31 INFO  Log:25 - Request results:
++----+
+| AGE|
++----+
+|  29|
++----+
+
+2021-08-18 17:34:31 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:34:31 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:34:31 INFO  Log:25 - Send request to DB: SELECT * FROM students WHERE LAST_NAME='Tarasavets'
+2021-08-18 17:34:31 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:34:31 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:34:31 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+----------+----------+----+----------------------+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|
++----+----------+----------+----+----------------------+
+
+2021-08-18 17:34:31 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:34:31 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:34:31 INFO  Log:25 - Send request to DB: SELECT * FROM students INNER JOIN course ON course.id = students.id
+2021-08-18 17:34:31 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:34:31 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:34:31 INFO  Log:25 - Request results:
++----+----------+----------+----+----------------------+----+------+-----+
+|  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |  ID|COURSE|CITY |
++----+----------+----------+----+----------------------+----+------+-----+
+|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|   1|AQA   |MINSK|
++----+----------+----------+----+----------------------+----+------+-----+
+
+2021-08-18 17:34:31 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:34:31 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:34:31 INFO  Log:25 - Send request to DB: SELECT * FROM course LEFT JOIN students ON course.id = students.id UNION SELECT * FROM course RIGHT JOIN students ON course.id = students.id
+2021-08-18 17:34:31 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:34:31 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:34:31 INFO  Log:25 - Request results:
++----+------+-----+----+----------+----------+----+----------------------+
+|  ID|COURSE|CITY |  ID|FIRST_NAME|LAST_NAME | AGE|EMAIL                 |
++----+------+-----+----+----------+----------+----+----------------------+
+|   1|AQA   |MINSK|   1|Uladzimir |Tarasavets|  29|tarasovets21@gmail.com|
++----+------+-----+----+----------+----------+----+----------------------+
++----+-------+------+------+----------+---------+------+------+
+|  ID|COURSE |CITY  |    ID|FIRST_NAME|LAST_NAME|   AGE|EMAIL |
++----+-------+------+------+----------+---------+------+------+
+|   2|JAVA SE|GRODNO|{null}|{null}    |{null}   |{null}|{null}|
++----+-------+------+------+----------+---------+------+------+
+
+2021-08-18 17:34:31 INFO  Log:25 - Send request to DB: DELETE FROM students WHERE ID=1
+2021-08-18 17:34:31 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:34:31 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:34:31 INFO  Log:25 - Data from table was deleted successfully
+2021-08-18 17:34:31 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:34:31 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:34:31 INFO  Log:25 - Send request to DB: DROP TABLE students
+2021-08-18 17:34:31 INFO  Log:25 - Table was deleted successfully
+2021-08-18 17:34:31 INFO  Log:25 - Connect to DB jdbc:mysql://localhost:3306/sakila by user root
+2021-08-18 17:34:31 INFO  Log:25 - Connection to DB successful!
+2021-08-18 17:34:31 INFO  Log:25 - Send request to DB: DROP TABLE course
+2021-08-18 17:34:31 INFO  Log:25 - Table was deleted successfully

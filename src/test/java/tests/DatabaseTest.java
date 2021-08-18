@@ -75,10 +75,6 @@ public class DatabaseTest {
                 () -> assertEquals("1", rs.getString("ID")),
                 () -> assertEquals("AQA", rs.getString("COURSE")),
                 () -> assertEquals("MINSK", rs.getString("CITY")));
-//                () -> assertEquals("2", rs.getString("ID")),
-//                () -> assertEquals("JAVA SE", rs.getString("COURSE")),
-//                () -> assertEquals("GRODNO", rs.getString("CITY")));
-
     }
 
     @Test
@@ -108,16 +104,6 @@ public class DatabaseTest {
     @Order(7)
     @DisplayName("Отправка INNER JOIN запроса")
     public void testInnerJoin() throws SQLException {
-
-    /*  SELECT поля FROM имя_таблицы
-        LEFT JOIN имя_связанной_таблицы ON условие_связи
-        WHERE условие_выборки
-        Оператор SQL INNER JOIN формирует таблицу из записей двух или нескольких таблиц.
-        Каждая строка из первой (левой) таблицы, сопоставляется с каждой строкой из второй (правой) таблицы,
-        после чего происходит проверка условия. Если условие истинно, то строки попадают в результирующую таблицу.
-        В результирующей таблице строки формируются конкатенацией строк первой и второй таблиц.
-        */
-
         String query = "SELECT * " +
                 "FROM students " +
                 "INNER JOIN course ON course.id = students.id";
@@ -127,26 +113,13 @@ public class DatabaseTest {
         assertEquals(expectedID, actualID, "Actual students is '" + actualID + "'. Expected - '" + expectedID + "'.");
     }
 
-//    @Test
-    @Disabled
+    @Test
     @Order(8)
-    @DisplayName("Отправка FULL JOIN запроса")
+    @DisplayName("Отправка FULL JOIN запроса с помощью UNION")
     public void testFullJoin() throws SQLException {
-        /*
-        Оператор SQL FULL JOIN осуществляет формирование таблицы из записей двух или нескольких таблиц.
-        В операторе SQL FULL JOIN не важен порядок следования таблиц, он никак не влияет на окончательный результат,
-        так как оператор является симметричным.
-        Оператор SQL FULL JOIN можно воспринимать как сочетание операторов SQL INNER JOIN + SQL LEFT JOIN + SQL RIGHT JOIN.
-        Алгоритм его работы следующий:
-        1) Сначала формируется таблица на основе внутреннего соединения (оператор SQL INNER JOIN).
-        2) Затем, в таблицу добавляются значения не вошедшие в результат формирования из правой таблицы (оператор SQL LEFT JOIN).
-            Для них, соответствующие записи из правой таблицы заполняются значениями NULL.
-        3) Наконец, в таблицу добавляются значения не вошедшие в результат формирования из левой таблицы (оператор SQL RIGHT JOIN).
-            Для них, соответствующие записи из левой таблицы заполняются значениями NULL.
-        */
-        String query = "SELECT * " +
-                "FROM students " +
-                "FULL JOIN course ON course.id = students.id";
+        String query = "SELECT * FROM course LEFT JOIN students ON course.id = students.id " +
+                "UNION " +
+                "SELECT * FROM course RIGHT JOIN students ON course.id = students.id";
         ResultSet rs = ConnectionJDBC.selectFromTable(query);
         String expectedID = "1";
         String actualID = rs.getString("ID");
